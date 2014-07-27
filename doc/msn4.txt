@@ -1,0 +1,65 @@
+14:21:36) util: Writing file C:\Documents and Settings\zsx\Application Data\.purple\blist.xml
+(14:21:42) msn: S: NS 000: NLN NLN zhengshuxin@hotmail.com 1 Ö£Ê÷ÐÂ 2788999484 %3cmsnobj%20Creator%3d%22zhengshuxin%40hotmail.com%22%20Type%3d%223%22%20SHA1D%3d%22swOTHLhQTf1atMfXVYTYNe7dMj8%3d%22%20Size%3d%2228808%22%20Location%3d%220%22%20Friendly%3d%22MgAwADEAMQAwADMAMgAzADIAMAA0AAAA%22%2f%3e
+(14:21:42) blist: Updating buddy status for zhengshuxin@hotmail.com (MSN)
+(14:21:42) sound: Playing C:\Program Files\Pidgin\sounds\purple\login.wav
+(14:21:42) msn: S: NS 000: UBX zhengshuxin@hotmail.com 1 614
+(14:21:42) msn: UBX received.
+(14:21:42) msn: msn get PSM
+(14:21:42) msn: Get CurrentMedia
+(14:21:42) msn: No currentmedia string
+(14:21:42) blist: Updating buddy status for zhengshuxin@hotmail.com (MSN)
+(14:21:53) msn: S: NS 000: NLN IDL yu_do_do@hotmail.com 1 2011---Ë³%20Ë³%20Ë³ 2789003564 0
+(14:21:53) blist: Updating buddy status for yu_do_do@hotmail.com (MSN)
+(14:21:59) util: Writing file blist.xml to directory C:\Documents and Settings\zsx\Application Data\.purple
+(14:21:59) util: Writing file C:\Documents and Settings\zsx\Application Data\.purple\blist.xml
+(14:22:14) msn: S: NS 000: NLN IDL land_beijing@msn.com 1 Land 1085280304 %3cmsnobj%20Creator%3d%22land_beijing%40msn.com%22%20Size%3d%222157%22%20Type%3d%223%22%20SHA1D%3d%22%2fulcnZCVYs%2f45uLMc3XDNXT3SQg%3d%22%20Url%3d%22%22%20Url1%3d%22http%3a%2f%2fbyfiles.storage.msn.com%2fy1mDhwIXcakT-cco5qDAKTcvdfeyUi7u14OySBxZ8G821C2fGWwmJk8214x0uy8zf3FO5-uyl_k-mKxBIOlRGwnnw%22%2f%3e
+(14:22:14) msn: Discarding invalid msnobj: '<msnobj Creator="land_beijing@msn.com" Size="2157" Type="3" SHA1D="/ulcnZCVYs/45uLMc3XDNXT3SQg=" Url="" Url1="http://byfiles.storage.msn.com/y1mDhwIXcakT-cco5qDAKTcvdfeyUi7u14OySBxZ8G821C2fGWwmJk8214x0uy8zf3FO5-uyl_k-mKxBIOlRGwnnw"
+
+14:22:40) msn: S: NS 000: ILN 0 IDL yu_do_do@hotmail.com 1 2011---Ë³%20Ë³%20Ë³ 2789003564 0
+(14:22:40) blist: Updating buddy status for yu_do_do@hotmail.com (MSN)
+(14:22:40) msn: S: NS 000: UBX yu_do_do@hotmail.com 1 457
+(14:22:40) msn: UBX received.
+(14:22:40) msn: msn get PSM
+(14:22:40) msn: Get CurrentMedia
+(14:22:40) msn: Parsing currentmedia string: "WMP\0Music\00\0{0} - {1}\0\0\0\0\0"
+(14:22:40) blist: Updating buddy status for yu_do_do@hotmail.com (MSN)
+(14:22:40) msn: S: NS 000: ILN 0 NLN cbuiler_guo@hotmail.com 1 ¹ù³¯êÍ 2248982564 %3cmsnobj%20Creator%3d%22cbuiler_guo%40hotmail.com%22%20Size%3d%2221609%22%20Type%3d%223%22%20Location%3d%2225559916.tmp%22%20Friendly%3d%22AAA%3d%22%20SHA1D%3d%22fH69zS9oW6kqMFjgQyxe4qxNoHo%3d%22%20SHA1C%3d%22V1ttLxsGVzrjIwC1LzBtJt9dwZc%3d%22%2f%3e
+(14:22:40) blist: Updating buddy status for cbuiler_guo@hotmail.com (MSN)
+(14:22:40) msn: S: NS 000: UBX cbuiler_guo@hotmail.com 1 477
+(14:22:40) msn: UBX received.
+(14:22:40) msn: msn get PSM
+(14:22:40) msn: Get CurrentMedia
+(14:22:40) msn: No currentmedia string
+(14:22:40) blist: Updating buddy status for cbuiler_guo@hotmail.com (MSN)
+(14:22:40) msn: S: NS 000: ILN 0 NLN heshanlily@hotmail.com 1 ºÍÉºLily 2788999484 %3cmsnobj%20Creator%3d%22heshanlily%40hotmail.com%22%20Size%3d%222805%22%20Type%3d%223%22%20SHA1D%3d%22uoywDzjoZ8XZmOQhx4y%2f6GeqF%2b0%3d%22%20Url%3d%22%22%20Url1%3d%22http%3a%2f%2fbyfiles.storage.msn.com%2fy1mBMQNiW0ewHoX0JFFTEwVA0SB9XPg_hoB_O2RH5JrIe7N6PALF-ijfS7z-2GP_9yKSgEupKBMQVmtzqACYpjg-Q%22%2f%3e
+(14:22:40) msn: Discarding invalid msnobj: '<msnobj Creator="heshanlily@hotmail.com" Size="2805" Type="3" SHA1D="uoywDzjoZ8XZmOQhx4y/6GeqF+0=" Url="" Url1="http://byfiles.storage.msn.com/y1mBMQNiW0ewHoX0JFFTEwVA0SB9XPg_hoB_O2RH5JrIe7N6PALF-ijfS7z-2GP_9yKSgEupKBMQVmtzqACYpjg-Q"/>'
+(14:22:40) blist: Updating buddy status for heshanlily@hotmail.com (MSN)
+(14:22:40) msn: S: NS 000: UBX heshanlily@hotmail.com 1 773
+(14:22:40) msn: UBX received.
+(14:22:40) msn: msn get PSM
+(14:22:40) msn: Get CurrentMedia
+(14:22:40) msn: Parsing currentmedia string: "WMP\0Music\00\0{0} - {1}\0\0\0\0\0"
+(14:22:40) blist: Updating buddy status for heshanlily@hotmail.com (MSN)
+(14:22:40) msn: S: NS 000: ILN 0 BSY shark_yang@hotmail.com 1 ¶«¾ý£¨Ôø¹ú·ªÕÔÁÒÎÄÖ®±ç£© 2788999468 %3cmsnobj%20Creator%3d%22shark_yang%40hotmail.com%22%20Type%3d%223%22%20SHA1D%3d%22gcKg1hCnUsbtL6lDXC5M6VAkVOc%3d%22%20Size%3d%222905%22%20Location%3d%220%22%20Friendly%3d%22eQBsAHMAZAAAAA%3d%3d%22%2f%3e
+(14:22:40) blist: Updating buddy status for shark_yang@hotmail.com (MSN)
+(14:22:40) msn: S: NS 000: UBX shark_yang@hotmail.com 1 609
+(14:22:40) msn: UBX received.
+(14:22:40) msn: msn get PSM
+(14:22:40) msn: Get CurrentMedia
+(14:22:40) msn: Parsing currentmedia string: "\0Music\00\0\0\0\0\0\0"
+(14:22:40) blist: Updating buddy status for shark_yang@hotmail.com (MSN)
+(14:22:40) msn: S: NS 000: NLN IDL land_beijing@msn.com 1 Land 1085280304 %3cmsnobj%20Creator%3d%22land_beijing%40msn.com%22%20Size%3d%222157%22%20Type%3d%223%22%20SHA1D%3d%22%2fulcnZCVYs%2f45uLMc3XDNXT3SQg%3d%22%20Url%3d%22%22%20Url1%3d%22http%3a%2f%2fbyfiles.storage.msn.com%2fy1mDhwIXcakT-cco5qDAKTcvdfeyUi7u14OySBxZ8G821C2fGWwmJk8214x0uy8zf3FO5-uyl_k-mKxBIOlRGwnnw%22%2f%3e
+(14:22:40) msn: Discarding invalid msnobj: '<msnobj Creator="land_beijing@msn.com" Size="2157" Type="3" SHA1D="/ulcnZCVYs/45uLMc3XDNXT3SQg=" Url="" Url1="http://byfiles.storage.msn.com/y1mDhwIXcakT-cco5qDAKTcvdfeyUi7u14OySBxZ8G821C2fGWwmJk8214x0uy8zf3FO5-uyl_k-mKxBIOlRGwnnw"/>'
+(14:22:40) blist: Updating buddy status for land_beijing@msn.com (MSN)
+(14:22:40) msn: S: NS 000: UBX land_beijing@msn.com 1 496
+(14:22:40) msn: UBX received.
+(14:22:40) msn: msn get PSM
+(14:22:40) msn: Get CurrentMedia
+(14:22:40) msn: No currentmedia string
+(14:22:40) blist: Updating buddy status for land_beijing@msn.com (MSN)
+(14:22:44) util: Writing file accounts.xml to directory C:\Documents and Settings\zsx\Application Data\.purple
+(14:22:44) util: Writing file C:\Documents and Settings\zsx\Application Data\.purple\accounts.xml
+(14:22:44) util: Writing file blist.xml to directory C:\Documents and Settings\zsx\Application Data\.purple
+(14:22:44) util: Writing file C:\Documents and Settings\zsx\Application Data\.purple\blist.xml
+(14:22:54) msn: S: NS 000: NLN NLN land_beijing@msn.com 1 Land 1085280304 %3cmsnobj%20Creator%3d%22land_beijing%40msn.com%22%20Size%3d%222157%22%20Type%3d%223%22%20SHA1D%3d%22%2fulcnZCVYs%2f45uLMc3XDNXT3SQg%3d%22%20Url%3d%22%22%20Url1%3d%22http%3a%2f%2fbyfiles.storage.msn.com%2fy1mDhwIXcakT-cco5qDAKTcvdfeyUi7u14OySBxZ8G821C2fGWwmJk8214x0uy8zf3FO5-uyl_k-mKxBIOlRGwnnw%22%2f%3e
+(14:22:54) msn: Discarding invalid msnobj: '<msnobj Creator="land_beijing@msn.com" Size="2157"

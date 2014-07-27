@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>MSN协议研究（二） - 好工具站长分享平台</title>
+    <meta name="keywords" content="MSN协议研究（二）" />
+    <meta name="description" content="PRESENCESERVICE负责用户状态接收，存储以及转发。当一个PRESENTITY从P1状态变为P2状态时，状态的改变会通过NOTIFICATION转发给所有的SUBSCRIBER。需要制定自己的一套协议，使得他能够在PRESE" />
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.haogongju.net/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/combres.axd/contentCss/20110512/"/>
+    <script type="text/javascript" src="/combres.axd/contentJs/20110512/"></script>
+</head>
+<body>
+    <div id="mainbox">
+        <div id="header">
+            <div class="logo">
+                <a href="http://www.haogongju.net/" title="好工具-站长资讯、经验、工具分享平台">好工具-站长资讯、经验、工具分享平台</a><div class="ad_top_left"><script type="text/javascript">                                                                                                               /*640*60，创建于2012-1-10*/var cpro_id = 'u739263';</script><script src="http://cpro.baidu.com/cpro/ui/c.js" type="text/javascript"></script></div></div>
+            <div class="nav">
+                <ul>
+                    <li><a href="http://www.haogongju.net/">首页</a></li>
+                    <li><a href="http://www.haogongju.net/hulianwang">互联网</a></li>
+                    <li><a href="http://www.haogongju.net/wangzhanyunying">网站运营</a></li>
+                    <li><a href="http://www.haogongju.net/tool">站长工具</a></li>
+                    <li><a href="http://www.haogongju.net/wangluobiancheng">网络编程</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="haogongju_index">
+            <div class="left">
+                <div class="guide">
+                    当前位置: <a href="http://www.haogongju.net/" target="_blak">好工具</a>    &gt;&gt; <a href="http://www.haogongju.net/wangluobiancheng" target="_blank">网络编程</a>
+&gt;&gt; <a href="http://www.haogongju.net/net" target="_self">.Net</a></div>
+                <div id="content">
+                    <h1>MSN协议研究（二）</h1>
+                    <div id="content_info">
+                        <span id="info"></span>
+                        2011/10/5 12:48:42 | 阅读<span id="hits">1</span>次
+                    </div>
+                    <div id="content_art">
+                        
+	&nbsp; 
+<P class=MsoNormal><SPAN lang=EN-US><a href="http://www.haogongju.net/tag/PR" target="_blank" title="PR">PR</a>ESENCE SERVICE</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">负责<a href="http://www.haogongju.net/tag/%E7%94%A8%E6%88%B7" target="_blank" title="用户">用户</a>状态接收，<a href="http://www.haogongju.net/tag/%E5%AD%98%E5%82%A8" target="_blank" title="存储">存储</a>以及<a href="http://www.haogongju.net/tag/%E8%BD%AC%E5%8F%91" target="_blank" title="转发">转发</a>。当一个</SPAN><SPAN lang=EN-US>PRESENT<a href="http://www.haogongju.net/tag/IT" target="_blank" title="IT">IT</a>Y</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">从</SPAN><SPAN lang=EN-US>P1</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">状态变为</SPAN><SPAN lang=EN-US>P2</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">状态时，状态的改变会通过</SPAN><SPAN lang=EN-US>NOTIFICATION</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">转发给所有的</SPAN><SPAN lang=EN-US>SUBSCRIBER</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">。</SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><?xml:namespace prefix = o ns = "urn:schemas-microsoft-com:office:office" /><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">需要制定自己的一套协议，使得他能够在</SPAN><SPAN lang=EN-US>PRESENCE SERVICE</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，</SPAN><SPAN lang=EN-US>PRESENTITIES</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，和</SPAN><SPAN lang=EN-US>WATCHERS</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">之间作为<a href="http://www.haogongju.net/tag/%E4%BA%A4%E4%BA%92" target="_blank" title="交互">交互</a>的语言。</SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US>PRENSENCE</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">时一组</SPAN><SPAN lang=EN-US>PRESENCE TUPLES</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的集合，每个</SPAN><SPAN lang=EN-US>PRESENCE TUPLE</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">代表了一个</SPAN><SPAN lang=EN-US>PRESENTITY</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">的状态信息。其中包含了：</SPAN></P>
+<P class=MsoNormal style="MARGIN-LEFT: 18pt; TEXT-INDENT: -18pt; mso-list: l0 level1 lfo1; tab-stops: list 18.0pt"><SPAN lang=EN-US style="mso-fareast-font-family: 'Times New Roman'"><SPAN style="mso-list: Ignore">1．<SPAN style="FONT: 7pt 'Times New Roman'">&nbsp; </SPAN></SPAN></SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">状态（</SPAN><SPAN lang=EN-US>STATUS</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">）</SPAN><SPAN lang=EN-US> 2. </SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">通讯地址（</SPAN><SPAN lang=EN-US>COMMUNICATION ADDE<a href="http://www.haogongju.net/tag/RSS" target="_blank" title="RSS">RSS</a></SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">），其中包括：联系方式（</SPAN><SPAN lang=EN-US>CONTACT M<a href="http://www.haogongju.net/tag/EA" target="_blank" title="EA">EA</a>NS</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">），联系地址（</SPAN><SPAN lang=EN-US>CONTACT ADDRESS</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">）。联系方式和联系地址都是<a href="http://www.haogongju.net/tag/%E5%8F%AF%E4%BB%A5" target="_blank" title="可以">可以</a>扩展的。目前模型<a href="http://www.haogongju.net/tag/%E5%AE%9A%E4%B9%89" target="_blank" title="定义">定义</a>的就是消息，以后可以时邮件，<a href="http://www.haogongju.net/tag/%E8%A7%86%E9%A2%91" target="_blank" title="视频">视频</a>，音频等等。</SPAN><SPAN lang=EN-US>3. </SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'"><a href="http://www.haogongju.net/tag/%E4%B8%80%E4%BA%9B" target="_blank" title="一些">一些</a>扩展信息。</SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">（二）即时消息<a href="http://www.haogongju.net/tag/%E6%9C%8D%E5%8A%A1" target="_blank" title="服务">服务</a>（</SPAN><SPAN lang=EN-US>INSTANT MESSAGE SERVICE</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">）</SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">即时消息的模型类似于<a href="http://www.haogongju.net/tag/%E9%82%AE%E7%AE%B1" target="_blank" title="邮箱">邮箱</a>，有发信的人（</SPAN><SPAN lang=EN-US>SENDER</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">），邮局（</SPAN><SPAN lang=EN-US>INSTANT MESSAGE SERVICE</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">），收件人信箱（</SPAN><SPAN lang=EN-US>INSTANT INBOX</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">）。</SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">同</SPAN><SPAN lang=EN-US>PRESENCE SERVICE</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">一样，由于需要在各个实体之间进行通讯，<a href="http://www.haogongju.net/tag/%E6%88%91%E4%BB%AC" target="_blank" title="我们">我们</a>也需要给</SPAN><SPAN lang=EN-US>INSTANT</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">制定一套协议。</SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><?xml:namespace prefix = v ns = "urn:schemas-microsoft-com:vml" /><v:shapetype id=_x0000_t75 coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f"><v:stroke joinstyle="miter"></v:stroke><v:formulas><v:f eqn="if lineDrawn pixelLineWidth 0"></v:f><v:f eqn="sum @0 1 0"></v:f><v:f eqn="sum 0 0 @1"></v:f><v:f eqn="prod @2 1 2"></v:f><v:f eqn="prod @3 21600 pixelWidth"></v:f><v:f eqn="prod @3 21600 pixelHeight"></v:f><v:f eqn="sum @0 0 1"></v:f><v:f eqn="prod @6 1 2"></v:f><v:f eqn="prod @7 21600 pixelWidth"></v:f><v:f eqn="sum @8 21600 0"></v:f><v:f eqn="prod @7 21600 pixelHeight"></v:f><v:f eqn="sum @10 21600 0"></v:f></v:formulas><v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"></v:path><o:lock v:ext="edit" aspectratio="t"></o:lock></v:shapetype></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;<IMG height=301 hspace=5 src="http://images.cnblogs.com/cnblogs_com/bluecross/MSN-3.gif" width=282 align=baseline></o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">到目前为止，这些都是<a href="http://www.haogongju.net/tag/%E6%9C%8D%E5%8A%A1%E5%99%A8" target="_blank" title="服务器">服务器</a>端的范畴。以</SPAN><SPAN lang=EN-US><a href="http://www.haogongju.net/tag/MSN" target="_blank" title="MSN">MSN</a></SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">为例，可以来<a href="http://www.haogongju.net/tag/%E7%90%86%E8%A7%A3" target="_blank" title="理解">理解</a>一下这些定义。</SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US>PRESENCE SERVICE</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">：这就是</SPAN><SPAN lang=EN-US>MSN</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">中状态变化的服务。用户<a href="http://www.haogongju.net/tag/%E7%99%BB%E9%99%86" target="_blank" title="登陆">登陆</a>的时候，就预定了自己的好友列表中的好友的状态变化，一旦某一个</SPAN><SPAN lang=EN-US>PRESENCE</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">（即用户）的状态发生变化，</SPAN><SPAN lang=EN-US>NOTIFICATION</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">就会通知所有订阅该用户状态的用户。</SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">而</SPAN><SPAN lang=EN-US>SENDER</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">就是服务器方接受用户发送的即时消息，然后转发给响应的用户。</SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">下面，我们将要把用户，以及用户<a href="http://www.haogongju.net/tag/%E6%8E%A5%E5%8F%A3" target="_blank" title="接口">接口</a>纳入整个模型之中。和之前类似，还是分为</SPAN><SPAN lang=EN-US>PRESENCE SERVICE</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">和</SPAN><SPAN lang=EN-US>INSTANT MESSAGE SERVICE</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">。同时我们引入一个概念</SPAN><SPAN lang=EN-US>PRINC<a href="http://www.haogongju.net/tag/IP" target="_blank" title="IP">IP</a>AL</SPAN><SPAN style="FONT-FAMILY: 宋体; mso-ascii-font-family: 'Times New Roman'; mso-hansi-font-family: 'Times New Roman'">，他可以是人，<a href="http://www.haogongju.net/tag/%E5%8F%A6%E5%A4%96" target="_blank" title="另外">另外</a>一个程序等等<a href="http://www.haogongju.net/tag/%E4%BB%BB%E4%BD%95" target="_blank" title="任何">任何</a>可以使用这两种服务的实体。</SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p>&nbsp;</o:p></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US></SPAN></P>
+<P class=MsoNormal><SPAN lang=EN-US><o:p><IMG height=584 hspace=5 src="http://images.cnblogs.com/cnblogs_com/bluecross/MSN-4.gif" width=624 align=baseline>&nbsp;</o:p></SPAN></P>
+    
+                    </div>
+                    <div class="ad_content_bottom"><script src="http://www.haogongju.net/ad/ad_003.js" type="text/javascript"></script></div>
+                    <div class="share">
+                        <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                            <span class="bds_more">分享到：</span> <a class="bds_qzone">QQ空间</a> <a class="bds_tsina">新浪微博</a> <a class="bds_tqq">腾讯微博</a> <a class="bds_renren">人人网</a> <a class="bds_hi">百度空间</a> <a class="bds_baidu">百度搜藏</a> <a class="bds_qq">QQ收藏</a> <a class="bds_tieba">百度贴吧</a>
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <div class="prevnextblock">
+    上一篇： <a href="http://www.haogongju.net/art/351619">听LeeHom的几首歌</a></br>
+     下一篇： <a href="http://www.haogongju.net/art/351621">Alice:曾经的CS反恐精英顶尖高手</a></br>
+                    </div>
+                    <div class="relative_block"><h3>关于 MSN协议研究（二） 的相关阅读</h3><ul><li><a title="MSN协议研究（一）" href="http://www.haogongju.net/art/354258" target="_blank">MSN协议研究（一）</a></li><li><a title="MSN协议中关于Send DP的研究" href="http://www.haogongju.net/art/570898" target="_blank">MSN协议中关于Send DP的研究</a></li><li><a title="MSN协议" href="http://www.haogongju.net/art/805612" target="_blank">MSN协议</a></li><li><a title="MSN协议15 的分析(支持离线留言)" href="http://www.haogongju.net/art/451418" target="_blank">MSN协议15 的分析(支持离线留言)</a></li><li><a title="巧用MSN协议命令" href="http://www.haogongju.net/art/405724" target="_blank">巧用MSN协议命令</a></li><li><a title="MSN协议消息传输过程分析" href="http://www.haogongju.net/art/584357" target="_blank">MSN协议消息传输过程分析</a></li><li><a title="MSN协议分析" href="http://www.haogongju.net/art/459082" target="_blank">MSN协议分析</a></li><li><a title="搞懂了MSN协议中的client id是怎么得到的" href="http://www.haogongju.net/art/571338" target="_blank">搞懂了MSN协议中的client id是怎么得到的</a></li><li><a title="MSN协议开发资源" href="http://www.haogongju.net/art/175028" target="_blank">MSN协议开发资源</a></li><li><a title="MSN协议开发资源" href="http://www.haogongju.net/art/576331" target="_blank">MSN协议开发资源</a></li><li><a title="使用WPF技术实现基于MSN协议的五子棋程序" href="http://www.haogongju.net/art/215877" target="_blank">使用WPF技术实现基于MSN协议的五子棋程序</a></li><li><a title="MSN协议中的msnobj浅析" href="http://www.haogongju.net/art/571414" target="_blank">MSN协议中的msnobj浅析</a></li><li><a title="WAP协议研究笔记—彩信的传输" href="http://www.haogongju.net/art/725162" target="_blank">WAP协议研究笔记—彩信的传输</a></li><li><a title="WAP协议研究笔记—彩信的传输（转）" href="http://www.haogongju.net/art/750953" target="_blank">WAP协议研究笔记—彩信的传输（转）</a></li><li><a title="webqq2.0协议研究（1）-判断是否需要验证码" href="http://www.haogongju.net/art/817902" target="_blank">webqq2.0协议研究（1）-判断是否需要验证码</a></li></ul></div>
+                
+                <div class="ad_left_bottom">
+<script type="text/javascript">    /*580*90，创建于2012-1-10*/var cpro_id = 'u739270';</script><script src="http://cpro.baidu.com/cpro/ui/c.js" type="text/javascript"></script></div>
+                </div>
+                <div class="commentlist">
+                    <div id="commentsContent">
+                    </div>
+                        <div class="postContent">
+                            <a name="commentPostFocus"></a>
+                            <form method="post" id="commentPostForm">
+                            <dl>
+                                <dt>您的昵称</dt><dd><input type="text" name="name" id="name" size="30" class="input" value="好工具匿名网友" /></dd></dl>
+                            <dl>
+                                <dt>评论内容</dt><dd><textarea name="msgContent" id="msgContent" cols="60" rows="10"></textarea></dd></dl>
+                            <dl>
+                                <dt></dt><dd><input type="hidden" id="commentID" name="commentID" value="0" /><input type="hidden" name="artId" id="artId" value="351620" /><input
+                                    type="submit" id="cmtSubmit" value="发表评论(S)" class="button" /></dd></dl>
+                            </form>
+                            <div class="clear">
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="ad_right_top"><script src="http://www.haogongju.net/ad/search.js" type="text/javascript"></script></div>
+                <div class="right_bolck">
+                    <h3>.Net 文章最新发布</h3>
+<ul>
+        <li><a title="务实用的曲线控件" href="http://www.haogongju.net/art/1227440" target="_blank">务实用的曲线控件</a></li>
+        <li><a title="对于解析html成tag树的讨论" href="http://www.haogongju.net/art/1227439" target="_blank">对于解析html成tag树的讨论</a></li>
+        <li><a title="初学EJB,请叫环境配置有关问题" href="http://www.haogongju.net/art/1227437" target="_blank">初学EJB,请叫环境配置有关问题</a></li>
+        <li><a title="出现异常：expection in thread &amp;quot;main&amp;quot; java.lang.Noclassdeffounderror:Jnet(wrong name c15 Jnet)" href="http://www.haogongju.net/art/1227436" target="_blank">出现异常：expection in thread &amp;quot;main&amp;quot; java.lang.Noclassdeffounderror:Jnet(wrong name c15 Jnet)</a></li>
+        <li><a title="问个毫无技术含量的有关问题:关于连接CSS语句的" href="http://www.haogongju.net/art/1227435" target="_blank">问个毫无技术含量的有关问题:关于连接CSS语句的</a></li>
+        <li><a title="清能人解释一段JS代码的意思！小弟我实在是看不懂呀" href="http://www.haogongju.net/art/1227434" target="_blank">清能人解释一段JS代码的意思！小弟我实在是看不懂呀</a></li>
+        <li><a title="定时握手的有关问题" href="http://www.haogongju.net/art/1227433" target="_blank">定时握手的有关问题</a></li>
+        <li><a title="在一个窗体中控制另一个窗体的控件出现的有关问题" href="http://www.haogongju.net/art/1227432" target="_blank">在一个窗体中控制另一个窗体的控件出现的有关问题</a></li>
+        <li><a title="用asp.net作自定义FTP服务器" href="http://www.haogongju.net/art/1227431" target="_blank">用asp.net作自定义FTP服务器</a></li>
+        <li><a title="到哪里停耿祥义 的&amp;lt;&amp;lt;JAVA 2实用教程&amp;gt;&amp;gt;的电子版" href="http://www.haogongju.net/art/1227430" target="_blank">到哪里停耿祥义 的&amp;lt;&amp;lt;JAVA 2实用教程&amp;gt;&amp;gt;的电子版</a></li>
+</ul>
+                </div>
+                <div class="ad_right_center"><script src="http://www.haogongju.net/ad/ad_004.js" type="text/javascript"></script></div>
+                <div class="right_bolck">
+                    <h3>.Net 文章一周点击</h3>
+                    <ul><li><a title="黑客公开CSDN网站数据库 600余万用户资料泄露！！" href="http://www.haogongju.net/art/1132797" target="_blank">黑客公开CSDN网站数据库 600余万用户资料泄露！！</a></li><li><a title="CSDN网站用户数据库给破了" href="http://www.haogongju.net/art/1132662" target="_blank">CSDN网站用户数据库给破了</a></li><li><a title="old offender -監獄からの脱出" href="http://www.haogongju.net/art/812217" target="_blank">old offender -監獄からの脱出</a></li><li><a title="奇酷的JavaScript代码（可直接在浏览器地址栏运行）" href="http://www.haogongju.net/art/724015" target="_blank">奇酷的JavaScript代码（可直接在浏览器地址栏运行）</a></li><li><a title="DNSPOD服务商吴洪声爆料:CSDN数据库被人爆了,密码是明文存储的...." href="http://www.haogongju.net/art/857634" target="_blank">DNSPOD服务商吴洪声爆料:CSDN数据库被人爆了,密码是明文存储的....</a></li><li><a title="iphone 裏脱出ゲーム脱出ゲーム mocogame 攻略" href="http://www.haogongju.net/art/705051" target="_blank">iphone 裏脱出ゲーム脱出ゲーム mocogame 攻略</a></li><li><a title="社工黑客死亡之ping找回数据" href="http://www.haogongju.net/art/527228" target="_blank">社工黑客死亡之ping找回数据</a></li><li><a title="ゾンビカフェ 攻略" href="http://www.haogongju.net/art/735937" target="_blank">ゾンビカフェ 攻略</a></li><li><a title="真正的完美版的WAYOS完美破解版，确实有这号东西，哈哈" href="http://www.haogongju.net/art/95100" target="_blank">真正的完美版的WAYOS完美破解版，确实有这号东西，哈哈</a></li><li><a title="如何不花钱下载百度文库的资料？" href="http://www.haogongju.net/art/1063381" target="_blank">如何不花钱下载百度文库的资料？</a></li></ul>
+                </div>
+                <div class="right_bolck">
+                    <h3>.Net 文章一月点击</h3>
+                    <ul><li><a title="黑客公开CSDN网站数据库 600余万用户资料泄露！！" href="http://www.haogongju.net/art/1132797" target="_blank">黑客公开CSDN网站数据库 600余万用户资料泄露！！</a></li><li><a title="old offender -監獄からの脱出" href="http://www.haogongju.net/art/812217" target="_blank">old offender -監獄からの脱出</a></li><li><a title="社工黑客死亡之ping找回数据" href="http://www.haogongju.net/art/527228" target="_blank">社工黑客死亡之ping找回数据</a></li><li><a title="真正的完美版的WAYOS完美破解版，确实有这号东西，哈哈" href="http://www.haogongju.net/art/95100" target="_blank">真正的完美版的WAYOS完美破解版，确实有这号东西，哈哈</a></li><li><a title="CSDN网站用户数据库给破了" href="http://www.haogongju.net/art/1132662" target="_blank">CSDN网站用户数据库给破了</a></li><li><a title="iPad iOS 5 通知栏显示农历和天气的方法(转载)" href="http://www.haogongju.net/art/459644" target="_blank">iPad iOS 5 通知栏显示农历和天气的方法(转载)</a></li><li><a title="“暂时没有对您所在的地区提供下载和试听服务”的解决办法" href="http://www.haogongju.net/art/43191" target="_blank">“暂时没有对您所在的地区提供下载和试听服务”的解决办法</a></li><li><a title="奇酷的JavaScript代码（可直接在浏览器地址栏运行）" href="http://www.haogongju.net/art/724015" target="_blank">奇酷的JavaScript代码（可直接在浏览器地址栏运行）</a></li><li><a title="MVC3.0在各个版本IIS中的部署" href="http://www.haogongju.net/art/18523" target="_blank">MVC3.0在各个版本IIS中的部署</a></li><li><a title="ゾンビカフェ 攻略" href="http://www.haogongju.net/art/496470" target="_blank">ゾンビカフェ 攻略</a></li></ul>
+                </div>
+                <div class="ad_right_bottom"><script src="http://www.haogongju.net/ad/ad_005.js" type="text/javascript"></script></div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div class="bottom_images">
+            </div>
+
+<p>
+    <a href="http://www.haogongju.net/abouthaogongju" target="_blank">关于好工具</a> <a href="http://www.haogongju.net/hulianwang" target="_blank">互联网资讯</a> <a href="http://www.haogongju.net/seo" target="_blank">Seo</a> <a href="http://www.haogongju.net/net" target="_blank">.Net编程</a> <a href="http://www.haogongju.net/sitemap" target="_blank"  class="bottomli">网站地图</a></p>
+<p class="bottomli">
+    Copyright 2011-2012 HaoGongJu.Net ( 好工具 ) All Rights Reserved
+    <script src="http://s20.cnzz.com/stat.php?id=3021203&web_id=3021203" language="JavaScript"></script>
+    <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0be38d6025dddffb63569ca8991215d4' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</p>
+        </div>
+    </div>
+    <a href="javascript:void(0);" class="gotop_btn" id="goTopButton" style="display: none;">&nbsp;</a>
+    <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=61841"></script>
+    <script type="text/javascript" id="bdshell_js"></script>
+    <script type="text/javascript">
+        var bds_config = { 'bdText': 'MSN协议研究（二）-好工具站长分享平台 PRESENCESERVICE负责用户状态接收，存储以及转发。当一个PRESENTITY从P1状态变为P2状态时，状态的改变会通过NOTIFICATION转发给所有的SUBSCRIBER。需要制定自己的一套协议，使得他能够在PRESE' };
+        document.getElementById("bdshell_js").src = "http://share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();
+    </script>
+</body>
+</html>

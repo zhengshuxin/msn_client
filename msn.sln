@@ -1,0 +1,60 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MsnDemo", "MsnDemo\MsnDemo.vcxproj", "{24D15D6C-9688-4917-9509-C625E3CE84A0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib_msn", "lib_msn\lib_msn.vcxproj", "{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugDll|Win32 = DebugDll|Win32
+		lib_acl_dll_debug|Win32 = lib_acl_dll_debug|Win32
+		lib_acl_dll_release|Win32 = lib_acl_dll_release|Win32
+		lib_acl_mysql_debug|Win32 = lib_acl_mysql_debug|Win32
+		lib_acl_mysql_release|Win32 = lib_acl_mysql_release|Win32
+		Release|Win32 = Release|Win32
+		Releasedll|Win32 = Releasedll|Win32
+		Template|Win32 = Template|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.Debug|Win32.Build.0 = Debug|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.DebugDll|Win32.ActiveCfg = Debug|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.DebugDll|Win32.Build.0 = Debug|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.lib_acl_dll_debug|Win32.ActiveCfg = Release|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.lib_acl_dll_debug|Win32.Build.0 = Release|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.lib_acl_dll_release|Win32.ActiveCfg = Release|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.lib_acl_dll_release|Win32.Build.0 = Release|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.lib_acl_mysql_debug|Win32.ActiveCfg = Release|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.lib_acl_mysql_debug|Win32.Build.0 = Release|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.lib_acl_mysql_release|Win32.ActiveCfg = Release|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.lib_acl_mysql_release|Win32.Build.0 = Release|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.Release|Win32.ActiveCfg = Release|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.Release|Win32.Build.0 = Release|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.Releasedll|Win32.ActiveCfg = Release|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.Releasedll|Win32.Build.0 = Release|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.Template|Win32.ActiveCfg = Template|Win32
+		{24D15D6C-9688-4917-9509-C625E3CE84A0}.Template|Win32.Build.0 = Template|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.Debug|Win32.Build.0 = Debug|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.DebugDll|Win32.ActiveCfg = Debug|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.DebugDll|Win32.Build.0 = Debug|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.lib_acl_dll_debug|Win32.ActiveCfg = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.lib_acl_dll_debug|Win32.Build.0 = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.lib_acl_dll_release|Win32.ActiveCfg = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.lib_acl_dll_release|Win32.Build.0 = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.lib_acl_mysql_debug|Win32.ActiveCfg = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.lib_acl_mysql_debug|Win32.Build.0 = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.lib_acl_mysql_release|Win32.ActiveCfg = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.lib_acl_mysql_release|Win32.Build.0 = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.Release|Win32.ActiveCfg = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.Release|Win32.Build.0 = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.Releasedll|Win32.ActiveCfg = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.Releasedll|Win32.Build.0 = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.Template|Win32.ActiveCfg = Release|Win32
+		{EA78C54F-4BD0-41B9-B3EE-7E17AF46D4E7}.Template|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

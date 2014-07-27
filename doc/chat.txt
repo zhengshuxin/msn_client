@@ -1,0 +1,28 @@
+>> XFR 24 SB
+<< XFR 24 SB 64.4.61.197:1863 CKI 2065718735.6221394.239234250 U messenger.msn.com 1
+>> USR 1 forward_day@hotmail.com;{12FC37FA-52CC-6C02-7F02-275A70A17A63} 2065718735.6221394.239234250
+<< USR 1 OK forward_day@hotmail.com;{12fc37fa-52cc-6c02-7f02-275a70a17a63} xxxx
+>> CAL 2 zhengshuxin@hotmail.com
+<< CAL 2 RINGING 2065718735
+<< JOI zhengshuxin@hotmail.com;{0a68b3b4-27a9-46f4-a98e-05ffd16d684d} 郑树�?2788999484:2550273072
+<< JOI zhengshuxin@hotmail.com 郑树�?2788999484:2550273072 
+>> MSG 3 A 149
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+User-Agent: pidgin/2.7.11
+X-MMS-IM-Format: FN=Segoe%20UI; EF=; CO=0; PF=0; RL=0
+
+hello
+<< ACK 3
+>> MSG 4 U 99
+MIME-Version: 1.0
+Content-Type: text/x-clientcaps
+
+Client-Name: Purple/2.7.11
+Chat-Logging: Y
+MSG 5 U 99
+MIME-Version: 1.0
+Content-Type: text/x-clientcaps
+
+Client-Name: Purple/2.7.11
+Chat-Logging: Y

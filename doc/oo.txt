@@ -1,0 +1,7 @@
+ <?xml version="1.0" encoding="utf-16" ?> 
+- <SignedTicket xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ver="1" keyVer="1">
+  <Data>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8+DQo8VGlja2V0IHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiPg0KICA8VFM+MjAxMS0wOC0wMVQxMDowNjo0MC42OTM0OTgxWjwvVFM+DQogIDxDSUQ+LTE2MjQ3ODIwNjMyMjY2OTk0ODc8L0NJRD4NCjwvVGlja2V0Pg==</Data> 
+  <Sig>OxVfJEKPxl0qCtUmolIy7wjOiCbMCSsLmWBv+863oxTjPKx2w4ly9Z9gOcWCWd+k7bQ5fD+RvwvUOS14muAGxW7CMrRb330Qw77L6MO2hgVjG78V3w3mh191kyAFba7yMfWV6I+E7+eoOreAREJp9B/LiDnWb09/ZlCBiQHUOqY=</Sig> 
+  </SignedTicket>
+
+nonce = "PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8+CjxTaWduZWRUaWNrZXQgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgdmVyPSIxIiBrZXlWZXI9IjEiPgogIDxEYXRhPlBEOTRiV3dnZG1W...

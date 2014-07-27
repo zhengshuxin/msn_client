@@ -1,0 +1,129 @@
+CMsnChat::read_callback>>>read: (NLN NLN forward_day@hotmail.com 1 sss 241618128
+4:2147619840 0), len(61)
+>>src(NLN forward_day@hotmail.com 1 sss 2416181284:2147619840 0)
+CMsnChat::read_callback>>>read: (UBX forward_day@hotmail.com 1 205), len(33)
+>>argc: 3, forward_day@hotmail.com, 1, forward_day@hotmail.com 1 205
+CMsnChat::read_callback>>>read: (<Data><UserTileLocation></UserTileLocation><Fri
+endlyName>sss</FriendlyName><EndpointData id="{3794391a-4816-4bac-b34b-6ec7fb504
+6c6}"><Capabilities>2416181284:2147619840</Capabilities></EndpointData></Data>),
+ len(205)
+>>(<Data><UserTileLocation></UserTileLocation><FriendlyName>sss</FriendlyName><E
+ndpointData id="{3794391a-4816-4bac-b34b-6ec7fb5046c6}"><Capabilities>2416181284
+:2147619840</Capabilities></EndpointData></Data>)
+CMsnChat::read_callback>>>read: (CHG 10 NLN 2416181284:0), len(23)
+
+CMsnChat::read_callback>>>read: (ILN 0 NLN zhengshuxin@hotmail.com 1 郑树�?27
+88999484:2550273072 %3cmsnobj%20Creator%3d%22zhengshuxin%40hotmail.com%22%20Type
+%3d%223%22%20SHA1D%3d%22zQ6gdsvF1nLw%2bFDPHEJEbB0LHus%3d%22%20Size%3d%2228650%22
+%20Location%3d%220%22%20Friendly%3d%22MgAwADEAMQAwADYAMgAxADIAOQAwAAAA%22%2f%3e)
+, len(287)
+OnCmdILN >>>Display: ֣����, passport: zhengshuxin@hotmail.com, status: online
+
+CMsnChat::read_callback>>>read: (UBX zhengshuxin@hotmail.com 1 614), len(33)
+>>argc: 3, zhengshuxin@hotmail.com, 1, zhengshuxin@hotmail.com 1 614
+CMsnChat::read_callback>>>read: (<Data><UserTileLocation>&lt;msnobj Creator="zhe
+ngshuxin@hotmail.com" Type="3" SHA1D="zQ6gdsvF1nLw+FDPHEJEbB0LHus=" Size="28650"
+ Location="0" Friendly="MgAwADEAMQAwADYAMgAxADIAOQAwAAAA"/&gt;</UserTileLocation
+><FriendlyName>郑树�?/FriendlyName><RUM>做就要做精品</RUM><PSM>做就�
+�做精品</PSM><MachineGuid>{FEEC17E1-7335-4EB3-B312-A2E0A21F51A3}</MachineGuid
+><DDP></DDP><SignatureSound></SignatureSound><Scene></Scene><ColorScheme></Color
+Scheme><CurrentMedia></CurrentMedia><EndpointData id="{feec17e1-7335-4eb3-b312-a
+2e0a21f51a3}"><Capabilities>2788999484:2550273072</Capabilities></EndpointData><
+/Data>), len(614)
+>>(<Data><UserTileLocation>&lt;msnobj Creator="zhengshuxin@hotmail.com" Type="3"
+ SHA1D="zQ6gdsvF1nLw+FDPHEJEbB0LHus=" Size="28650" Location="0" Friendly="MgAwAD
+EAMQAwADYAMgAxADIAOQAwAAAA"/&gt;</UserTileLocation><FriendlyName>郑树�?/Frien
+dlyName><RUM>做就要做精品</RUM><PSM>做就要做精品</PSM><MachineGuid>{
+FEEC17E1-7335-4EB3-B312-A2E0A21F51A3}</MachineGuid><DDP></DDP><SignatureSound></
+SignatureSound><Scene></Scene><ColorScheme></ColorScheme><CurrentMedia></Current
+Media><EndpointData id="{feec17e1-7335-4eb3-b312-a2e0a21f51a3}"><Capabilities>27
+88999484:2550273072</Capabilities></EndpointData></Data>)
+CMsnChat::read_callback>>>read: (XFR 11 SB 64.4.44.29:1863 CKI 910303807.1358720
+5.18711832 U messenger.msn.com 1), len(79)
+>>src(11 SB 64.4.44.29:1863 CKI 910303807.13587205.18711832 U messenger.msn.com
+1)
+
+CMsnChat::read_callback>>>read: (ILN 0 NLN kirk1368@hotmail.com 1 何俊�?27889
+99468:2550273072 %3cmsnobj%20Creator%3d%22kirk1368%40hotmail.com%22%20Type%3d%22
+3%22%20SHA1D%3d%22WliJzSCj1p0%2b9%2bBOKoKSC%2fcHKMk%3d%22%20Size%3d%2224040%22%2
+0Location%3d%220%22%20Friendly%3d%22cVwwV%2bqBTIhmjwAA%22%2f%3e), len(271)
+OnCmdILN >>>Display: �ο���, passport: kirk1368@hotmail.com, status: online
+
+CMsnChat::read_callback>>>read: (UBX kirk1368@hotmail.com 1 593), len(30)
+>>argc: 3, kirk1368@hotmail.com, 1, kirk1368@hotmail.com 1 593
+CMsnChat::read_callback>>>read: (<Data><UserTileLocation>&lt;msnobj Creator="kir
+k1368@hotmail.com" Type="3" SHA1D="WliJzSCj1p0+9+BOKoKSC/cHKMk=" Size="24040" Lo
+cation="0" Friendly="cVwwV+qBTIhmjwAA"/&gt;</UserTileLocation><FriendlyName>何�
+���?/FriendlyName><RUM></RUM><PSM></PSM><MachineGuid>{DD279506-B926-4780-BA6C-6
+B00E825DEAC}</MachineGuid><DDP></DDP><SignatureSound></SignatureSound><Scene></S
+cene><ColorScheme></ColorScheme><CurrentMedia>WMP\0Music\00\0{0} - {1}\0\0\0\0\0
+</CurrentMedia><EndpointData id="{dd279506-b926-4780-ba6c-6b00e825deac}"><Capabi
+lities>2788999468:2550273072</Capabilities></EndpointData></Data>), len(593)
+>>(<Data><UserTileLocation>&lt;msnobj Creator="kirk1368@hotmail.com" Type="3" SH
+A1D="WliJzSCj1p0+9+BOKoKSC/cHKMk=" Size="24040" Location="0" Friendly="cVwwV+qBT
+IhmjwAA"/&gt;</UserTileLocation><FriendlyName>何俊�?/FriendlyName><RUM></RUM>
+<PSM></PSM><MachineGuid>{DD279506-B926-4780-BA6C-6B00E825DEAC}</MachineGuid><DDP
+></DDP><SignatureSound></SignatureSound><Scene></Scene><ColorScheme></ColorSchem
+e><CurrentMedia>WMP\0Music\00\0{0} - {1}\0\0\0\0\0</CurrentMedia><EndpointData i
+d="{dd279506-b926-4780-ba6c-6b00e825deac}"><Capabilities>2788999468:2550273072</
+Capabilities></EndpointData></Data>)
+
+CMsnChat::read_callback>>>read: (ILN 0 NLN heshanlily@hotmail.com 1 和珊Lily 2
+788999484:2550273072 %3cmsnobj%20Creator%3d%22heshanlily%40hotmail.com%22%20Size
+%3d%222805%22%20Type%3d%223%22%20SHA1D%3d%22uoywDzjoZ8XZmOQhx4y%2f6GeqF%2b0%3d%2
+2%20Url%3d%22%22%20Url1%3d%22http%3a%2f%2fbyfiles.storage.msn.com%2fy1mBMQNiW0ew
+HoX0JFFTEwVA0SB9XPg_hoB_O2RH5JrIe7N6PALF-ijfS7z-2GP_9yKSgEupKBMQVmtzqACYpjg-Q%22
+%2f%3e), len(373)
+OnCmdILN >>>Display: ��ɺLily, passport: heshanlily@hotmail.com, status: online
+
+CMsnChat::read_callback>>>read: (UBX heshanlily@hotmail.com 1 773), len(32)
+>>argc: 3, heshanlily@hotmail.com, 1, heshanlily@hotmail.com 1 773
+CMsnChat::read_callback>>>read: (<Data><UserTileLocation>&lt;msnobj Creator="hes
+hanlily@hotmail.com" Size="2805" Type="3" SHA1D="uoywDzjoZ8XZmOQhx4y/6GeqF+0=" U
+rl="" Url1="http://byfiles.storage.msn.com/y1mBMQNiW0ewHoX0JFFTEwVA0SB9XPg_hoB_O
+2RH5JrIe7N6PALF-ijfS7z-2GP_9yKSgEupKBMQVmtzqACYpjg-Q"/&gt;</UserTileLocation><Fr
+iendlyName>和珊Lily</FriendlyName><RUM>我的微博：http://weibo.com/heshanl
+ily</RUM><PSM>我的微博：http://weibo.com/heshanlily</PSM><MachineGuid>{2AE3
+E2BB-9AB9-4284-B7B7-7508E4E7CB45}</MachineGuid><DDP></DDP><SignatureSound></Sign
+atureSound><Scene></Scene><ColorScheme></ColorScheme><CurrentMedia>WMP\0Music\00
+\0{0} - {1}\0\0\0\0\0</CurrentMedia><EndpointData id="{2ae3e2bb-9ab9-4284-b7b7-7
+508e4e7cb45}"><Capabilities>2788999484:2550273072</Capabilities></EndpointData><
+/Data>), len(773)
+>>(<Data><UserTileLocation>&lt;msnobj Creator="heshanlily@hotmail.com" Size="280
+5" Type="3" SHA1D="uoywDzjoZ8XZmOQhx4y/6GeqF+0=" Url="" Url1="http://byfiles.sto
+rage.msn.com/y1mBMQNiW0ewHoX0JFFTEwVA0SB9XPg_hoB_O2RH5JrIe7N6PALF-ijfS7z-2GP_9yK
+SgEupKBMQVmtzqACYpjg-Q"/&gt;</UserTileLocation><FriendlyName>和珊Lily</Friendl
+yName><RUM>我的微博：http://weibo.com/heshanlily</RUM><PSM>我的微博：h
+ttp://weibo.com/heshanlily</PSM><MachineGuid>{2AE3E2BB-9AB9-4284-B7B7-7508E4E7CB
+45}</MachineGuid><DDP></DDP><SignatureSound></SignatureSound><Scene></Scene><Col
+orScheme></ColorScheme><CurrentMedia>WMP\0Music\00\0{0} - {1}\0\0\0\0\0</Current
+Media><EndpointData id="{2ae3e2bb-9ab9-4284-b7b7-7508e4e7cb45}"><Capabilities>27
+88999484:2550273072</Capabilities></EndpointData></Data>)
+
+CMsnChat::read_callback>>>read: (ILN 0 BSY shark_yang@hotmail.com 1 东君（万
+事俱备，只欠泡沫�?2788999468:2550273072 %3cmsnobj%20Creator%3d%22shark_
+yang%40hotmail.com%22%20Type%3d%223%22%20SHA1D%3d%22gcKg1hCnUsbtL6lDXC5M6VAkVOc%
+3d%22%20Size%3d%222905%22%20Location%3d%220%22%20Friendly%3d%22eQBsAHMAZAAAAA%3d
+%3d%22%2f%3e), len(300)
+OnCmdILN >>>Display: ���������¾㱸��ֻǷ��ĭ��, passport: shark_yang@hotmail.co
+m, status: busy
+
+CMsnChat::read_callback>>>read: (UBX shark_yang@hotmail.com 1 612), len(32)
+>>argc: 3, shark_yang@hotmail.com, 1, shark_yang@hotmail.com 1 612
+CMsnChat::read_callback>>>read: (<Data><UserTileLocation>&lt;msnobj Creator="sha
+rk_yang@hotmail.com" Type="3" SHA1D="gcKg1hCnUsbtL6lDXC5M6VAkVOc=" Size="2905" L
+ocation="0" Friendly="eQBsAHMAZAAAAA=="/&gt;</UserTileLocation><FriendlyName>�
+�君（万事俱备，只欠泡沫�?/FriendlyName><RUM></RUM><PSM></PSM><Machin
+eGuid>{AE404228-F2BA-490F-9995-5A1C8FEDCB1D}</MachineGuid><DDP></DDP><SignatureS
+ound></SignatureSound><Scene></Scene><ColorScheme></ColorScheme><CurrentMedia>\0
+Music\00\0\0\0\0\0\0</CurrentMedia><EndpointData id="{ae404228-f2ba-490f-9995-5a
+1c8fedcb1d}"><Capabilities>2788999468:2550273072</Capabilities></EndpointData></
+Data>), len(612)
+>>(<Data><UserTileLocation>&lt;msnobj Creator="shark_yang@hotmail.com" Type="3"
+SHA1D="gcKg1hCnUsbtL6lDXC5M6VAkVOc=" Size="2905" Location="0" Friendly="eQBsAHMA
+ZAAAAA=="/&gt;</UserTileLocation><FriendlyName>东君（万事俱备，只欠�
+�沫�?/FriendlyName><RUM></RUM><PSM></PSM><MachineGuid>{AE404228-F2BA-490F-9995
+-5A1C8FEDCB1D}</MachineGuid><DDP></DDP><SignatureSound></SignatureSound><Scene><
+/Scene><ColorScheme></ColorScheme><CurrentMedia>\0Music\00\0\0\0\0\0\0</CurrentM
+edia><EndpointData id="{ae404228-f2ba-490f-9995-5a1c8fedcb1d}"><Capabilities>278
+8999468:2550273072</Capabilities></EndpointData></Data>)

@@ -1,0 +1,505 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>MSNP18协议分析（一）--- MSN协议介绍 - 念念红尘的技术专栏 - 博客频道 - CSDN.NET</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="主要介绍MSNP18协议的发展和基本概念，为这一些列的开篇。" />
+<script src="http://static.blog.csdn.net/Scripts/jquery.js" type="text/javascript"></script>
+<script src="http://static.blog.csdn.net/scripts/plugins.js" type="text/javascript"></script>
+<script src="http://static.blog.csdn.net/scripts/common.js" type="text/javascript"></script>
+<link rel="Stylesheet" type="text/css" href="http://static.blog.csdn.net/skin/light_blue/css/style.css" />
+<link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="/cc_net/rss/list" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link type="text/css" rel="stylesheet" href="http://static.blog.csdn.net/scripts/SyntaxHighlighter/styles/blue_black.css" />
+</head>
+<body>
+<script src="http://csdnimg.cn/pubnav/js/pub_topnav_2011.js"type="text/javascript"></script>
+<div id="container">
+<div id="header">
+    <div class="header">
+        <div id="blog_title">
+            <h1>
+                <a href="/cc_net">念念红尘的技术专栏</a></h1>
+            <h2>有了梦想 才不至于停下追逐的脚步</h2>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+</div>
+<div id="navigator">
+    <div class="navigator_bg">
+    </div>
+    <div class="navigator">
+        <ul>
+            <!--<li id="btnHome"><a href="/cc_net"><span><img src="http://static.blog.csdn.net/images/ico_home.gif">我的首页</span></a></li>-->
+            <li id="btnContents"><a href="/cc_net?viewmode=contents"><span><img src="http://static.blog.csdn.net/images/ico_list.gif">目录视图</span></a></li>
+            <li id="btnView"><a href="/cc_net?viewmode=list"><span><img src="http://static.blog.csdn.net/images/ico_summary.gif">摘要视图</span></a></li>
+            <li id="btnRss"><a href="/cc_net/rss/list"><span><img src="http://static.blog.csdn.net/images/ico_rss.gif">订阅</span></a></li>
+</ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var username = "cc_net";
+    var blog_address = "http://blog.csdn.net/cc_net";
+    var static_host = "http://static.blog.csdn.net";
+    var currentUserName = $.cookie("UserName");
+</script>
+        
+<div id="body">
+<div id="main">
+<div class="main">
+<div class="notice"> 
+<a href="http://blog.csdn.net/honestpyq/article/details/7198127" target="_blank"><font color=red>2011年度CSDN高校俱乐部“优秀主席”火热出炉！</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://ad.doubleclick.net/click;h=v2|3E84|0|0|%2a|b;247908458;0-0;0;73605427;31-1|1;44759227|44777015|1;;%3fhttp://www.ithaowai.com/cloud?utm_source=CSDN&utm_medium=CSDN_HomePage_news_picture_g01&utm_campaign=CN2011Q4BIZ_Xeon_IT_Center_Promotion" target="_blank"><font color=red>点击了解英特尔云计算 </font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://blog.csdn.net/blogdevteam/article/details/7177569" target="_blank"><font color=red>2012年1月当选微软MVP的CSDN会员名单揭晓！</font></a>
+</div><script type="text/javascript" src="http://static.blog.csdn.net/scripts/ad.js"></script>
+
+<div id="article_details" class="details">
+    <div class="article_title">
+    <span class="ico ico_type_Original"></span>
+    <h3>
+        <span class="link_title"><a href="/cc_net/article/details/5980984" title="MSNP18协议分析（一）--- MSN协议介绍">MSNP18协议分析（一）--- MSN协议介绍</a></span>
+        
+    </h3>
+</div>
+
+        
+    <div class="article_manage">
+        <span class="link_categories">
+        分类：
+            <a href="/cc_net/article/category/748906">MSN协议系列</a> 
+        </span>
+    <span class="link_postdate">2010-11-02 01:26</span>
+    <span class="link_view" title="阅读次数">1701人阅读</span>
+    <span class="link_comments" title="评论次数"><a href="#comments">评论</a>(2)</span>
+    <span class="link_collect"><a href="javascript:void(0);" onclick="javascript:collectArticle('MSNP18协议分析（一）--- MSN协议介绍','5980984');return false;" title="收藏">收藏</a></span>
+    <span class="link_report"><a href="#report"  onclick="javascript:report(5980984,2);return false;" title="举报">举报</a></span>
+    
+</div>
+
+    
+<div id="article_content" class="article_content">
+    <p>近一个多月一直在做手机上一个MSN客户端的项目，目前项目也接近尾声。对于MSN的一套协议，有了一个大概的了解。之所以说是大概的了解，是因为文档基本没有，网络上大部分都是比较老的协议。唯一具有参考价值的是一个C#版的开源MSN和一份微软MSNP13的命令文档。更多的还是我们自己抓包进行分析，加上项目紧，没有时间对协议进行深入的分析。基本上是抓到什么用什么，用什么抓什么。呵呵。加之网络上基本上找不到完整的MSPN18协议的介绍，所以就打算写这一个系列，介绍自己了解到的一些东西。</p>
+<p>&nbsp;</p>
+<p>在开始这一系列之前要感谢项目组的同事们，因为很多协议命令需要他们来给我讲解的。哈哈</p>
+<p>&nbsp;</p>
+<hr />
+<p>&nbsp;.</p>
+<h2>一 MSNP</h2>
+<p>MSNP是MSN Protocol的缩写。对于聊天软件来说，实际就是用户和用户，用户和服务器之间的数据传输。协议就是数据传输的规则。在使用MSN时，为什么对方上线我们能知道，为什么对方更改头像我们能知道。因为他在进行这些操作时发送了一些数据通知服务器，而服务器接收到这些数据时，广播给他的好友，然后我们就接受到他上线的消息了。</p>
+<p>&nbsp;</p>
+<p>所以微软定义了一套MSN使用的协议，也就是MSNP。MSNP的版本，目前最新的版本已经是MSNP21了，使用在最新的MSN 2011上。而目前使用的最多的客户端还是MSN 2009，他是基于MSNP18协议的。微软的服务器对以前的版本是兼容的，但是微软建议使用MSN8.1以上的版本，而MSN8.1是基于MSNP15协议开发的。</p>
+<p>&nbsp;</p>
+<p>
+<table style="width: 789px; border-collapse: collapse;" border="0" cellspacing="0" cellpadding="0">
+<colgroup span="1"><col style="width: 71pt; mso-width-source: userset; mso-width-alt: 3040;" span="1" width="95"></col><col style="width: 173pt; mso-width-source: userset; mso-width-alt: 7392;" span="1" width="231"></col><col style="width: 347pt; mso-width-source: userset; mso-width-alt: 14816;" span="1" width="463"></col></colgroup>
+<tbody>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl65" style="background-color: #ffff99; width: 71pt; height: 14.25pt; border: windowtext 0.5pt solid;" width="95" height="19"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;"><strong>MSNP版本</strong></span></span></span></td>
+<td class="xl67" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: #ffff99; width: 173pt; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid;" width="231"><span style="font-size: small;"><span style="font-family: 新宋体;"><strong><span style="font-size: small;"><span style="font-family: 新宋体;">对应</span><span class="font7" style="font-family: MS PGothic;">MSN版本</span></span></strong></span></span></td>
+<td class="xl68" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: #ffff99; width: 347pt; border-top: windowtext 0.5pt solid; border-right: windowtext 0.5pt solid;" width="463"><span style="font-family: 新宋体;"><span style="font-size: small;"><strong><span style="font-family: 新宋体; font-size: small;">更新概述</span></strong></span></span></td>
+</tr>
+<tr style="height: 28.5pt;" height="38">
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 71pt; height: 28.5pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="95" height="38"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">MSNP9</span></span></span></td>
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 173pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="231"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">MSN Messenger 6.0</span></span></span></td>
+<td class="xl69" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 347pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="463"><span style="font-size: small;"><span style="font-family: 新宋体;"><span style="font-size: small;"><span style="font-family: 新宋体;">该</span><span class="font6" style="font-family: MS PGothic;">版</span><span class="font8" style="font-family: 新宋体;">协议</span><span class="font6" style="font-family: MS PGothic;">大多数的改</span><span class="font8" style="font-family: 新宋体;">变</span><span class="font6" style="font-family: MS PGothic;">都是</span><span class="font8" style="font-family: 新宋体;">为</span><span class="font6" style="font-family: MS PGothic;">了支持MSNC1（也成</span><span class="font8" style="font-family: 新宋体;">为</span><span class="font6" style="font-family: MS PGothic;">点</span><span class="font8" style="font-family: 新宋体;">对</span><span class="font6" style="font-family: MS PGothic;">点</span><span class="font8" style="font-family: 新宋体;">传输</span><span class="font6" style="font-family: MS PGothic;">）。使用MSNP9</span><span class="font8" style="font-family: 新宋体;">连</span><span class="font6" style="font-family: MS PGothic;">接Messenger 服</span><span class="font8" style="font-family: 新宋体;">务</span><span class="font6" style="font-family: MS PGothic;">于MSNP8相差不大</span></span></span></span></td>
+</tr>
+<tr style="height: 30.75pt;" height="41">
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 71pt; height: 30.75pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="95" height="41"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">MSNP11</span></span></span></td>
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 173pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="231"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">　</span></span></span></td>
+<td class="xl69" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 347pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="463"><span style="font-size: small;"><span style="font-family: 新宋体;"><span style="font-size: small;"><span style="font-family: 新宋体;">该</span><span class="font6" style="font-family: MS PGothic;">版本</span><span class="font8" style="font-family: 新宋体;">协议</span><span class="font6" style="font-family: MS PGothic;">引入了非常多的改</span><span class="font8" style="font-family: 新宋体;">变</span><span class="font6" style="font-family: MS PGothic;">，最重要的做出口令</span><span class="font8" style="font-family: 新宋体;">检</span><span class="font9" style="font-family: MingLiU;">查</span><span class="font6" style="font-family: MS PGothic;">，以及如何</span><span class="font8" style="font-family: 新宋体;">编</span><span class="font6" style="font-family: MS PGothic;">排同</span><span class="font10" style="font-family: BatangChe;">步</span><span class="font6" style="font-family: MS PGothic;">的、已</span><span class="font8" style="font-family: 新宋体;">访问</span><span class="font6" style="font-family: MS PGothic;">的、已改</span><span class="font8" style="font-family: 新宋体;">变</span><span class="font6" style="font-family: MS PGothic;">的和</span><span class="font8" style="font-family: 新宋体;">这</span><span class="font6" style="font-family: MS PGothic;">期</span><span class="font8" style="font-family: 新宋体;">间</span><span class="font6" style="font-family: MS PGothic;">新增的列表。</span></span></span></span></td>
+</tr>
+<tr style="height: 28.5pt;" height="38">
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 71pt; height: 28.5pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="95" height="38"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">MSNP12</span></span></span></td>
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 173pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="231"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">MSN Messenger 7.5</span></span></span></td>
+<td class="xl69" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 347pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="463"><span style="font-size: small;"><span style="font-family: 新宋体;"><span style="font-size: small;"><span style="font-family: 新宋体;">该</span><span class="font6" style="font-family: MS PGothic;">版</span><span class="font8" style="font-family: 新宋体;">协议</span><span class="font6" style="font-family: MS PGothic;">没有太多功能改</span><span class="font8" style="font-family: 新宋体;">变</span><span class="font6" style="font-family: MS PGothic;">，除了</span><span class="font8" style="font-family: 新宋体;">联</span><span class="font6" style="font-family: MS PGothic;">系人</span><span class="font8" style="font-family: 新宋体;">类</span><span class="font6" style="font-family: MS PGothic;">型的概念，</span><span class="font8" style="font-family: 新宋体;">这</span><span class="font6" style="font-family: MS PGothic;">使MSNP12比MSNP11更能兼容MSNP13等高版本</span><span class="font8" style="font-family: 新宋体;">协议</span><span class="font6" style="font-family: MS PGothic;">。</span></span></span></span></td>
+</tr>
+<tr style="height: 28.5pt; mso-height-source: userset;" height="38">
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 71pt; height: 85.5pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" rowspan="2" width="95" height="114"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">MSNP13</span></span></span></td>
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 173pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" rowspan="2" width="231"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">Windows Live Messenger 8.0</span></span></span></td>
+<td class="xl70" style="border-bottom: black 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 347pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" rowspan="2" width="463"><span style="font-size: small;"><span style="font-size: small;"><span style="font-family: 新宋体;"><span style="font-family: 新宋体;">该</span><span class="font6" style="font-family: MS PGothic;">版</span><span class="font8" style="font-family: 新宋体;">协议</span><span class="font6" style="font-family: MS PGothic;">基于MSNP12，但</span><span class="font8" style="font-family: 新宋体;">处</span><span class="font6" style="font-family: MS PGothic;">理</span><span class="font8" style="font-family: 新宋体;">联</span><span class="font6" style="font-family: MS PGothic;">系人列表的方式与MSNP12不兼容。 MSNP13在普通服</span><span class="font8" style="font-family: 新宋体;">务</span><span class="font6" style="font-family: MS PGothic;">器上工作，地址</span><span class="font8" style="font-family: 新宋体;">为</span><span class="font6" style="font-family: MS PGothic;">：messenger.hotmail.com:1863。注意：如果</span><span class="font8" style="font-family: 新宋体;">你</span><span class="font6" style="font-family: MS PGothic;">需要做Yahoo!互操作性</span><span class="font8" style="font-family: 新宋体;">测试</span><span class="font6" style="font-family: MS PGothic;">，需要支持MSNP14!MSNP13也引入的</span><span class="font8" style="font-family: 新宋体;">对离线</span><span class="font6" style="font-family: MS PGothic;">消息的完全兼容（上一个版本的client不行）。</span></span></span><span style="font-size: small;"></span></span></td>
+</tr>
+<tr style="height: 57pt; mso-height-source: userset;" height="76">
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 71pt; height: 14.25pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="95" height="19"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">MSNP14</span></span></span></td>
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 173pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="231"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">Windows Live Messenger 8.0.0792</span></span></span></td>
+<td class="xl69" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 347pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="463"><span style="font-size: small;"><span style="font-family: 新宋体;"><span style="font-size: small;"><span style="font-family: 新宋体;">该</span><span class="font6" style="font-family: MS PGothic;">版</span><span class="font8" style="font-family: 新宋体;">协议</span><span class="font6" style="font-family: MS PGothic;">主要改</span><span class="font8" style="font-family: 新宋体;">进</span><span class="font6" style="font-family: MS PGothic;">之</span><span class="font8" style="font-family: 新宋体;">处</span><span class="font6" style="font-family: MS PGothic;">是与Yahoo!的互操作性。</span></span></span></span></td>
+</tr>
+<tr style="height: 185.25pt; mso-height-source: userset;" height="247">
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 71pt; height: 227.25pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" rowspan="4" width="95" height="303"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">MSNP15</span></span></span></td>
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 173pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" rowspan="4" width="231"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">Windows Live Messenger 8.1</span></span></span></td>
+<td class="xl70" style="border-bottom: black 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 347pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" rowspan="4" width="463"><span style="font-size: small;"><span style="font-size: small;"><span style="font-family: 新宋体;"><span style="font-family: 新宋体;">该</span><span class="font6" style="font-family: MS PGothic;">版</span><span class="font8" style="font-family: 新宋体;">协议</span><span class="font6" style="font-family: MS PGothic;">基于MSNP14，但使用了不同的</span><span class="font8" style="font-family: 新宋体;">验证</span><span class="font6" style="font-family: MS PGothic;">方式RPS（Relying Party Suite）/SSO。TWN（"Tweener"）</span><span class="font8" style="font-family: 新宋体;">验证</span><span class="font6" style="font-family: MS PGothic;">方式用</span><span class="font8" style="font-family: 新宋体;">户</span><span class="font6" style="font-family: MS PGothic;">MSNP14及以下版本，RPS方式将使用在MSNP15及以上版本。也就是</span><span class="font8" style="font-family: 新宋体;">说</span><span class="font6" style="font-family: MS PGothic;">，</span><span class="font8" style="font-family: 新宋体;">经历</span><span class="font6" style="font-family: MS PGothic;">了最</span><span class="font8" style="font-family: 新宋体;">开</span><span class="font6" style="font-family: MS PGothic;">始的MD5方式，MSNP8以上的TWN方式后，新的MSN</span><span class="font8" style="font-family: 新宋体;">验证</span><span class="font6" style="font-family: MS PGothic;">方式又出来了。<span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp; </span>微</span><span class="font8" style="font-family: 新宋体;">软计划为</span><span class="font6" style="font-family: MS PGothic;">新的</span><span class="font8" style="font-family: 新宋体;">验证</span><span class="font6" style="font-family: MS PGothic;">机制增加更多的属性以支持用</span><span class="font8" style="font-family: 新宋体;">户</span><span class="font6" style="font-family: MS PGothic;">的漫游。也就是</span><span class="font8" style="font-family: 新宋体;">说</span><span class="font6" style="font-family: MS PGothic;">，用</span><span class="font8" style="font-family: 新宋体;">户显</span><span class="font6" style="font-family: MS PGothic;">示的</span><span class="font8" style="font-family: 新宋体;">图</span><span class="font6" style="font-family: MS PGothic;">片，以及以后的【个人状</span><span class="font8" style="font-family: 新宋体;">态</span><span class="font6" style="font-family: MS PGothic;">消息】，无</span><span class="font8" style="font-family: 新宋体;">论</span><span class="font6" style="font-family: MS PGothic;">在</span><span class="font8" style="font-family: 新宋体;">哪</span><span class="font6" style="font-family: MS PGothic;">里登</span><span class="font8" style="font-family: 新宋体;">录</span><span class="font6" style="font-family: MS PGothic;">都是一</span><span class="font8" style="font-family: 新宋体;">样</span><span class="font6" style="font-family: MS PGothic;">的。<span style="mso-spacerun: yes;">&nbsp;&nbsp;&nbsp; </span>此外，</span><span class="font8" style="font-family: 新宋体;">对</span><span class="font6" style="font-family: MS PGothic;">用</span><span class="font8" style="font-family: 新宋体;">户</span><span class="font6" style="font-family: MS PGothic;">位置的支持已添加到【个人状</span><span class="font8" style="font-family: 新宋体;">态</span><span class="font6" style="font-family: MS PGothic;">消息】功能中。尽管后来</span><span class="font8" style="font-family: 新宋体;">该</span><span class="font6" style="font-family: MS PGothic;">功能已从Windows Live Messenger 8.1 的客</span><span class="font8" style="font-family: 新宋体;">户</span><span class="font6" style="font-family: MS PGothic;">端</span><span class="font8" style="font-family: 新宋体;">删</span><span class="font6" style="font-family: MS PGothic;">除。重要</span><span class="font8" style="font-family: 新宋体;">说</span><span class="font6" style="font-family: MS PGothic;">明：所有使用09607671-1C32-421F-A6A6-CBFAA51AB5F4</span><span class="font8" style="font-family: 新宋体;">应</span><span class="font6" style="font-family: MS PGothic;">用程序id的SOAP</span><span class="font8" style="font-family: 新宋体;">请</span><span class="font6" style="font-family: MS PGothic;">求都将返回500</span><span class="font8" style="font-family: 新宋体;">错误</span><span class="font6" style="font-family: MS PGothic;">。因</span><span class="font8" style="font-family: 新宋体;">为该</span><span class="font6" style="font-family: MS PGothic;"> id是来自于旧的beta客</span><span class="font8" style="font-family: 新宋体;">户</span><span class="font6" style="font-family: MS PGothic;">端且被微</span><span class="font8" style="font-family: 新宋体;">软</span><span class="font6" style="font-family: MS PGothic;">屏蔽了。</span><span class="font8" style="font-family: 新宋体;">应该</span><span class="font6" style="font-family: MS PGothic;">使用来自Windows Live Messenger 8.5的id：CFE80F9D-180F-4399-82AB-413F33A1FA11 ，或者其它有效的SOAP</span><span class="font8" style="font-family: 新宋体;">请</span><span class="font6" style="font-family: MS PGothic;">求id。</span></span></span><span style="font-size: small;"></span></span></td>
+</tr>
+<tr style="height: 14.25pt; mso-height-source: userset;" height="19">
+</tr>
+<tr style="height: 14.25pt; mso-height-source: userset;" height="19">
+</tr>
+<tr style="height: 13.5pt;" height="18">
+</tr>
+<tr style="height: 28.5pt;" height="38">
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 71pt; height: 28.5pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="95" height="38"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">MSNP16</span></span></span></td>
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 173pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="231"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">Windows Live Messenger Beta 2009 14.0</span></span></span></td>
+<td class="xl69" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 347pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="463"><span style="font-family: 新宋体;"><span style="font-size: small;"><span style="font-family: 新宋体; font-size: small;">该版本协议主要引入了多点登录机制（MPOP），允许一个用户在不同地点同时登录</span></span></span></td>
+</tr>
+<tr style="height: 14.25pt;" height="19">
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 71pt; height: 14.25pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="95" height="19"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">MSNP18</span></span></span></td>
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 173pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="231"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">Windows Live 2009 (final)</span></span></span></td>
+<td class="xl72" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 347pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="463"><span style="font-size: small;"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic;">增加</span><span class="font11" style="font-family: 宋体;">对</span><span class="font6" style="font-family: MS PGothic;">MSN</span><span class="font11" style="font-family: 宋体;">群的支持。登录时增加了发送机器的</span><span class="font6" style="font-family: MS PGothic;">GUID</span></span></span></span></td>
+</tr>
+<tr style="height: 28.5pt;" height="38">
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; background-color: transparent; width: 71pt; height: 28.5pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="95" height="38"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">MSNP19-21</span></span></span></td>
+<td class="xl66" style="border-bottom: windowtext 0.5pt solid; border-left: windowtext; background-color: transparent; width: 173pt; border-top: windowtext; border-right: windowtext 0.5pt solid;" width="231"><span style="font-family: MS PGothic;"><span style="font-size: small;"><span style="font-family: MS PGothic; font-size: small;">Windows Live 2011</span></span></span></td>
+<td class="xl73" style="BORDER-BOTTOM: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BACKGROUND-COLOR: transparent; BORDER-TOP: windowtext; BORDER-RIGHT: #f0f0f0" width="463"><span style="font-size: small;"><span style="font-family: 宋体;"><span style="font-size: small;"><span style="font-family: 宋体;">这个版本变动极大，完全改变了通信方式，不在使用</span><span class="font6" style="font-family: MS PGothic;">SwitchBroad。使用的命令也有大量改</span><span class="font11" style="font-family: 宋体;">变</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;以上是对MSNP9到最新的MSNP21协议变化的一个介绍，这里并不打算详细介绍其中的变化，只需要简单的了解。对于MSNP19-21变动比较大。目前还不了解。</p>
+<p>&nbsp;</p>
+<p>关于MSNP协议：<a href="http://www.hypothetic.org/docs/msn/general/overview.php">http://www.hypothetic.org/docs/msn/general/overview.php</a>&nbsp;这里介绍的很详细，虽然协议版本比较老，但是大部分还是使用的，一开始觉得这个比较老，没有太大用处，最后还是老老实实的读了一遍，才发现有不少收获。</p>
+<p>.</p>
+<p>.</p>
+<p>&nbsp;</p>
+<h2>二 MSNP基本概念</h2>
+<p>在详细分析MSNP之前，我们必须了解整个MSN通信的过程。如果仔细读了上面的链接，应该了解了。如果不想读E文，那就看我的简单介绍吧。</p>
+<p>.</p>
+<h3>1 服务器</h3>
+<p>MSN服务器目前一共有四种类型，这个或许和许多人看的文档的三种不太一样。因为这里把WebService服务器也归纳进来。在刚看文档时，并不知道WebService服务器的存在，导致走了不少弯路。除了WebService服务器外，和其他服务器都是直接通过TCP协议进行的。MSN并为使用到UDP。</p>
+<p>&nbsp;</p>
+<p><span lang="EN-US"><strong>Dispatch Server ：</strong>中文名可以叫做派遣服务器，我们后面全部简称为DS。在登录到正式的服务器之前，需要连接到次服务器，从这里获得正式服务器的地址。他的作用更像是一个集群的接口机。获得地址后服务器会主动断开。</span></p>
+<p>&nbsp;</p>
+<p><span lang="EN-US"><span lang="EN-US"><strong>Notification Server：</strong>中文名一般叫做通知服务器，我们简称为NS。从DS获得的就是连接到NS的地址，他的生命周期知道MSN注销或关闭才终止。用户的状态，签名，请求聊天，接受聊天，接受其他用户状态，签名，头像等等，都是通过和NS服务器进行交互的。</span></span></p>
+<p>&nbsp;</p>
+<p><span lang="EN-US"><span lang="EN-US"><span lang="EN-US"><strong>Switchboar Server：</strong>中文名一般叫接线服务器，我们简称为SB（@_@!）。从名字就能想到功能，他是主要负责聊天的。MSN聊天内容全部是通过服务器中转的，所以这个服务器象一个接线员，负责接通2个联系人之间的线路，是的他们能够聊天。对于多人聊天，也很简单了。</span></span></span></p>
+<p>&nbsp;</p>
+<p><span lang="EN-US"><span lang="EN-US"><span lang="EN-US"><strong>WebService Server：</strong>在这里我把WebService也归纳进来，他实际是一个WebService集合，对于联系人列表，群组列表，头像，离线消息，登陆认证等等很多地方都需要从不同的WebService请求数据。而我在一开始不知道这个的存在，以为所有数据都来自NS，导致走了不少弯路。这里大部分使用的是https协议，部分也支持http协议。</span></span></span></p>
+<p><span lang="EN-US"><span lang="EN-US"><span lang="EN-US">.</span></span></span></p>
+<p>&nbsp;</p>
+<h3><span lang="EN-US"><span lang="EN-US"><span lang="EN-US">2 协议命令</span></span></span></h3>
+<p>&nbsp;MSN客户端和服务器之间通信，都是通过发送命令进行的。在MSN中，目前所有的命令都是三个字母的，命令后面可以带有参数，但是参数不是必须的。参数一般包含命令ID和数据，基本格式为：<span style="color: #ff0000;">【协议命令】_【命令ID】_【命令数据】，</span>其中下划线代表空格。</p>
+<p>&nbsp;</p>
+<p>在和服务器通信时，基本上是发送一个命令，服务器都会返回一条信息给你。可能是返回你请求的数据，也可能是告诉你你发送的命令已经正确处理。服务器和客户端一样，根据不同的协议命令进行不一样的处理，比如接收到OUT，服务器就认为我们退出了；而我们接收到OUT OTH 表示我们被服务器踢下线了。</p>
+<p>&nbsp;</p>
+<p>命令ID是用来匹配客户端发送的命令和服务器响应消息的。比如我发送了多条有ID的消息给服务器，服务器处理完后会发送一条相同命令和ID的消息给你。我们可以通过ID判断，服务器处理了我们那一条消息。ID的范围是 0到4294967295， 但是并不建议使用0。目前官方的MSN使用1开始。消息的ID必须不重复。</p>
+<p>&nbsp;</p>
+<p>而对于发送的数据，有两种形式，一种是<span style="color: #ff0000;">【数据】/r/n</span> ; 另一种是 <span style="color: #ff0000;">【数据大小】/r/n【数据】<span style="color: #000000;">。前一种一般是数据比较少时使用，数据的结尾使用/r/n标识；而后一种对于大量数据，往往是XML格式的数据。数据结尾没有/r/n表示，所以必须通过数据前方的数据大小来取得正确的数据。这种命令一般称为Payload Command。</span></span></p>
+<blockquote>
+<p><span style="color: #ff0000;"><span style="color: #0000ff;">&gt;&gt;&gt; VER 15 MSNP8 FOO CVR0 BAR/r/n<br /></span>&lt;&lt;&lt; VER 15 MSNP8 CVR0/r/n</span></p>
+<span style="color: #ff0000;">
+<p><br /><span style="color: #0000ff;">&gt;&gt;&gt; QRY 1049 </span><a href="mailto:msmsgs@msnmsgr.com"><span style="color: #0000ff;">msmsgs@msnmsgr.com</span></a><span style="color: #0000ff;"> 32/r/n <br />&nbsp;&nbsp;&nbsp; 8f2f5a91b72102cd28355e9fc9000d6e (no newline)</span></p>
+<p>//&lt;&lt;&lt;表示接受的消息，&gt;&gt;&gt;表示发送的消息</p>
+<p>&nbsp;</p>
+</span>&nbsp;</blockquote>
+<p>&nbsp;以上就是上面协议命令的例子。还有一种特殊的命令，MSG，他是在聊天时发送聊天内容的。有时也称为Message而不是Command。他的基本大致相同。后面会具体介绍。</p>
+<p>&nbsp;</p>
+<p>对于命令ID来说，服务器并不是按照我们发送给服务器的顺序进行相应的，我们也不一定需要发一条，接受一条，一次性可以发送多条，当然这是在服务器允许，不依赖命令返回信息的前提下。还有一些命令不带有ID号或者ID号是0，这样的命令称为异步命令。这也是为什么我们发送的ID号不要使用0的原因。</p>
+<p>.</p>
+<p>&nbsp;</p>
+<h3>3 错误代码</h3>
+<p>发送给服务器的消息，可能因为格式，命令，顺序等问题产生错误，而服务器在接受到错误命令时，有时会直接断开连接，有时会在断开之前发送一个错误代码。错误代码都是三位数字，后面一般带有错误命令的ID号。比如240 6，就表示你发送的ID为6的命令中携带的XML格式不正确。一般来说接受到数字错误，基本上是我们程序存在错误。而且这种错误对于NS服务器来说可能会导致连接关闭。</p>
+<p>&nbsp;</p>
+<p>而对于其他一些错误代码，比如发送消息时接收到NAK，217这些，表示发送消息失败和联系人已离线。我们可以采用相应措施，比如重发和发送离线消息。这些是逻辑上错误，并不是程序上的错误，是可以恢复的和处理的。</p>
+<p>.</p>
+<p>&nbsp;</p>
+<h3>4 编码方式</h3>
+<p>了解了基本的命令格式之后，在谈谈编码方式。我们在和DS,NS,SB服务器发送数据时，发送的数据必须是UTF8编码格式。大家知道，UTF8和ASCII是兼容的，如果我们发送的全部是ASCII字符，那么我们是不需要进行编码处理的，如果发送的是非ASCII字符，就需要转为UTF编码。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>在程序中比如显示用户名，昵称，账号等数据时，要使用URL编码保存，一般对于值小于20的字符编码就可以了，但是如果对于所有字符编码，也是可以的；而在获取头像，上传头像时，我们又需要对头像数据进行BASE64编码；而对于XML节点数据而言，我们需要对其进行unicode编码。这里有一个问题，那些字符需要unicode编码，实际对于XML来说，只有&lt;和&amp;两个特殊字符需要处理。目前官方客户端对很多字符进行了unicode编码，但这并不是服务器要求。不编码也能正常工作。</p>
+<p>&nbsp;</p>
+<p>这里要注意的是，后面说的URL,BASE64,Unicode只是对数据编码。而前面UTF8编码是指法送的数据需要编码成此格式。比如我要法送一段XML数据&lt;PSM&gt;&amp;你好&lt;/PSM&gt;，因为&amp;为非法字符，需要进行Unicode编码，结果为&lt;PSM&gt;&amp;#x0000;你好&lt;/PSM&gt;；而我们在发送时，还必须对这数据进行UTF8加密，其中从【&amp;】得到【&amp;#x0000;】串，每个字符都要UTF8编码（实际可以不编码，兼容），而【你好】两个字必须UTF8编码才能发送。</p>
+<p>.</p>
+<p>&nbsp;</p>
+<h3>5 名字</h3>
+<p>&nbsp;MSN中存在多个名字，其中注册是使用的邮箱地址称为PassportName，而每个用户可以给自己起一个显示的名字称为DisplayName，而我们也可以给自己的联系人添加一个NickName。他们显示的优先级也是从低到高的。PassportName是唯一的，最大长度为129字节。DisplayName最大长度为387字节，但是考虑到需要对他进行URL编码，所以最多允许输入129个字符。</p>
+<p>.</p>
+<p>.</p>
+<p>&nbsp;</p>
+<h2>三 通讯过程</h2>
+<p>&nbsp;整个通讯的过程比较简单：</p>
+<p>1 连接到DS服务器，获得NS服务地址</p>
+<p>2 连接到NS服务器</p>
+<p>3 NS进行身份验证</p>
+<p>4 NS发送好友列表，用户个人信息，上线通知</p>
+<p>5 NS发送或接受聊天请求，获得SB地址</p>
+<p>6 连接到SB服务器</p>
+<p>7 SB发送或接受聊天消息</p>
+<p>8 断开SB连接</p>
+<p>9 断开NS连接</p>
+<p>10 退出</p>
+<p>&nbsp;</p>
+<p>整个过程就是这样，我们需要聊天时，要通过NS获得SB的地址，聊天双放往SB地址发送消息，服务器自动把消息广播给所有连接到此地址的客户端。而在一段时间无人聊天时服务器会断开连接，用户退出时，也会通知SB服务器，服务器也会广播告诉所有人。整个程序运行中，只能和一个NS服务器保持连接，但可以和多个SB服务器保持连接。</p>
+<p>.</p>
+<p>.</p>
+<p>&nbsp;</p>
+<p>以上就是对MSN协议的一个简单介绍，后面文章，将会对MSNP18协议进行具体分析。例如登陆，身份验证，获得联系人列表获得，获得头像，修改状态签名，添加联系人，接发消息，多人聊天，多点登陆等等。不过后面还有项目，时间可能不太充裕。慢慢来了。</p>
+</div>
+<div class="share_buttons" id="sharePanel"></div>
+
+<div class="article_next_prev">
+        <li class="prev_article">
+            <span>上一篇：</span><a href="http://blog.csdn.net/cc_net/article/details/5961703">实现自己的音乐搜索软件（三）</a></li>
+        <li class="next_article">
+            <span>下一篇：</span><a href="http://blog.csdn.net/cc_net/article/details/5986215">MSNP18协议分析（二）--- MSN登录身份认证</a></li>
+</div>
+
+
+</div>
+<div id="ad_cen"></div>
+<script type="text/javascript">
+    new Ad(4, 'ad_cen');
+</script>
+<div id="comment_title" class="panel_head">查看评论<a name="comments"></a></div>
+<div id="comment_list"></div>
+<div id="comment_bar"></div>
+<div id="comment_form"></div>
+<div class="announce">* 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场<a name="reply"></a><a name="quote"></a></div>
+<script type="text/javascript">
+    var fileName = '5980984';
+    var commentscount = 2;
+    var islock = false
+</script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/comment.js"></script>
+<div id="ad_bot"></div>
+<script type="text/javascript">
+    new Ad(5, 'ad_bot');
+</script>
+<div id="report_dialog"></div>
+
+
+
+<div class="clear"></div>
+</div>
+</div>
+<div id="side">
+    <div class="side">
+<div id="panel_Profile" class="panel">
+    <ul class="panel_head"><span>个人资料</span></ul>
+    <ul class="panel_body profile">
+        <div id="blog_userface">
+            <a href="/cc_net" title="我的博客主页">
+            <img src="http://avatar.csdn.net/0/5/5/1_cc_net.jpg"  style="max-width:90%"/>
+            </a>
+            <br />
+            <span>cc_net</span>
+        </div>
+        <div id="blog_medal">
+        </div>
+        <ul id="blog_rank">
+            <li>访问：<span>39621次</span></li>
+            <li>积分：<span>914分</span></li>
+            <li>排名：<span>第6870名</span></li>
+        </ul>
+        <ul id="blog_statistics">
+            <li>原创：<span>42篇</span></li>
+            <li>转载：<span>7篇</span></li>
+            <li>译文：<span>0篇</span></li>
+            <li>评论：<span>52条</span></li>
+        </ul>
+    </ul>
+</div><div id="custom_column_1850107" class="panel">
+    <ul class="panel_head"><span>胡言乱语</span></ul>
+    <ul class="panel_body">
+        
+专注于Windows Phone 7的开发
+
+    </ul>
+</div><div id="panel_Category" class="panel">
+    <ul class="panel_head"><span>文章分类</span></ul>
+    <ul class="panel_body">
+        <li>
+        <a href="http://blog.csdn.net/cc_net/article/category/834630">Windows Phone</a><span>(6)</span>
+        
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/cc_net/article/category/460917">.NET Framework</a><span>(9)</span>
+        
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/cc_net/article/category/348673">.Net学习笔记系列</a><span>(9)</span>
+        
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/cc_net/article/category/328720">WPF/Silverlight</a><span>(1)</span>
+        
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/cc_net/article/category/748906">MSN协议系列</a><span>(2)</span>
+        
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/cc_net/article/category/348674">C#</a><span>(6)</span>
+        
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/cc_net/article/category/460897">C/C++</a><span>(1)</span>
+        
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/cc_net/article/category/328719">Programming</a><span>(9)</span>
+        
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/cc_net/article/category/374447">DataBase</a><span>(5)</span>
+        
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/cc_net/article/category/328721">JAVA</a><span>(1)</span>
+        
+        </li>
+        <li>
+        <a href="http://blog.csdn.net/cc_net/article/category/328718">Others</a><span>(5)</span>
+        
+        </li>
+    </ul>
+</div><div class="panel" id="panel_Search">
+    <ul class="panel_head"><span>文章搜索</span></ul>
+    <ul class="panel_body">
+        <form id="frmSearch" action="http://so.csdn.net/search" class="form_search" target="_blank">
+        <span><input id="inputSearch" type="text" class="blogsearch" title="请输入关键字" /></span>
+        <input id="btnSubmit" type="submit" value="搜索" title="search in blog" />
+        <input type="hidden" name="q" id="inputQ" />
+        <input type="hidden" name="t" value="blog" />
+        <a id="btnSearchBlog" target="_blank"></a>
+        </form>
+    </ul>
+</div><div id="homepageArticles" class="panel">
+    <ul class="panel_head"><span>推荐文章</span></ul>
+    <ul class="panel_body" id="ad_commend">
+    </ul>
+</div>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/ad.js"></script>
+<script type="text/javascript">
+    new Ad(12, 'ad_commend');
+</script><div id="newcomments" class="panel">
+<ul class="panel_head"><span>最新评论</span></ul>
+<ul class="panel_body">
+    <li>
+    <a href="/cc_net/article/details/6581281#comments">Windows Phone开发（四）-- 导航事件和传值</a>
+    <p style="margin:0px;">lesineyzk:
+很有用，总算明白了点，顶下
+    </p>
+    </li>
+    <li>
+    <a href="/cc_net/article/details/5810095#comments">.NET中的Drag and Drop操作（三）</a>
+    <p style="margin:0px;">huang809425057:
+写的真的不错我刚好开发用的到。
+    </p>
+    </li>
+    <li>
+    <a href="/cc_net/article/details/6665737#comments">Windows Phone开发（六）-- 多任务之墓碑机制</a>
+    <p style="margin:0px;">cc_net:
+@xiaotaotian:昏，还记得。。。现在工作就是WP7开发
+    </p>
+    </li>
+    <li>
+    <a href="/cc_net/article/details/6665737#comments">Windows Phone开发（六）-- 多任务之墓碑机制</a>
+    <p style="margin:0px;">xiaotaotian:
+衰仔啊，还记得我么 嘿嘿，原来你现在开始研究芒果开发了呀
+    </p>
+    </li>
+    <li>
+    <a href="/cc_net/article/details/6552867#comments">Windows Phone开发（一）-- 开发环境和结构</a>
+    <p style="margin:0px;">anycoin:
+学习
+    </p>
+    </li>
+    <li>
+    <a href="/cc_net/article/details/6660889#comments">Windows Phone开发（五）-- 导航控制</a>
+    <p style="margin:0px;">xuweidu:
+好文章，正需要。
+    </p>
+    </li>
+    <li>
+    <a href="/cc_net/article/details/2955771#comments">深入了解.NET中继承和多态（上）</a>
+    <p style="margin:0px;">cc_net:
+@zhvsby:呵呵，你可以继续看后面2篇关于多态的文章。看完了应该就明白了。CoreCpu继承与I...
+    </p>
+    </li>
+    <li>
+    <a href="/cc_net/article/details/2955771#comments">深入了解.NET中继承和多态（上）</a>
+    <p style="margin:0px;">zhvsby:
+不错 可以咨询个问题么。CoreCpu : IntelCpu   里的Fun是如何做的 ，因为Int...
+    </p>
+    </li>
+    <li>
+    <a href="/cc_net/article/details/4900988#comments">实现自己的音乐搜索软件（一）</a>
+    <p style="margin:0px;">bobo324:
+好文章 alih
+    </p>
+    </li>
+    <li>
+    <a href="/cc_net/article/details/5986215#comments">MSNP18协议分析（二）--- MSN登录身份认证</a>
+    <p style="margin:0px;">Half_Life:
+博主要更新啊！
+    </p>
+    </li>
+</ul>
+</div>
+<div id="hotarticls" class="panel">
+    <ul class="panel_head"><span>评论排行</span></ul>
+    <ul class="panel_body">
+        <li>
+            <a href="/cc_net/article/details/5810095" title=".NET中的Drag and Drop操作（三）">.NET中的Drag and Drop操...</a> (8)
+        </li>
+        <li>
+            <a href="/cc_net/article/details/5986215" title="MSNP18协议分析（二）--- MSN登录身份认证">MSNP18协议分析（二）--- MSN...</a> (8)
+        </li>
+        <li>
+            <a href="/cc_net/article/details/560494" title="CSDN!!我又来了">CSDN!!我又来了</a> (5)
+        </li>
+        <li>
+            <a href="/cc_net/article/details/4900988" title="实现自己的音乐搜索软件（一）">实现自己的音乐搜索软件（一）</a> (4)
+        </li>
+        <li>
+            <a href="/cc_net/article/details/2955771" title="深入了解.NET中继承和多态（上）">深入了解.NET中继承和多态（上）</a> (3)
+        </li>
+        <li>
+            <a href="/cc_net/article/details/6552867" title="Windows Phone开发（一）-- 开发环境和结构">Windows Phone开发（一）--...</a> (2)
+        </li>
+        <li>
+            <a href="/cc_net/article/details/5980984" title="MSNP18协议分析（一）--- MSN协议介绍">MSNP18协议分析（一）--- MSN...</a> (2)
+        </li>
+        <li>
+            <a href="/cc_net/article/details/6665737" title="Windows Phone开发（六）-- 多任务之墓碑机制">Windows Phone开发（六）--...</a> (2)
+        </li>
+        <li>
+            <a href="/cc_net/article/details/2443395" title="数据库隔离级别">数据库隔离级别</a> (2)
+        </li>
+        <li>
+            <a href="/cc_net/article/details/2908600" title="内存对齐">内存对齐</a> (1)
+        </li>
+    </ul>
+</div>
+<div id="custom_column_963919" class="panel">
+    <ul class="panel_head"><span>交换链接</span></ul>
+    <ul class="panel_body">
+        <ul><li><a href="http://www.xwang.org" target=_blank>xwang</a></li><li><a href="http://seablog.iteye.com/" target=_blank>SEABLOG</a></li></ul>
+    </ul>
+</div>    </div>
+    <div class="clear">
+    </div>
+</div>
+
+<div class="clear"></div>
+</div>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/SyntaxHighlighter/shCore-src.js"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/ZeroClipboard/ZeroClipboard.js"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/article_code.js"></script>
+
+<script type="text/javascript" src="http://medal.blog.csdn.net/scripts/show.js"></script>
+<script type="text/javascript" src="http://medal.blog.csdn.net/showblogmedal.ashx?blogid=102156"></script>
+<script type="text/javascript">document.write("<img src=http://counter.csdn.net/pv.aspx?id=24 border=0 width=0 height=0>");</script>
+<script type="text/javascript" src="http://www.csdn.net/ui/scripts/Csdn/counter.js"></script>
+<script type="text/javascript" src="http://csdnimg.cn/pubfooter/js/publib_footer.js"></script>
+
+
+</div>
+</body>
+</html>

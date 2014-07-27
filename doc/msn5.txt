@@ -1,0 +1,80 @@
+CMsnChat::Send: >>send: (XFR 11 SB
+)
+CMsnChat::read_callback>>>read: (XFR 11 SB 207.46.124.189:1863 CKI 1667564553.20
+9193164.220199214 U messenger.msn.com 1), len(86)
+>>src(11 SB 207.46.124.189:1863 CKI 1667564553.209193164.220199214 U messenger.m
+sn.com 1)
+CMsnChat::read_callback>>>read: (NLN IDL yu_do_do@hotmail.com 1 2011---é¡?20é¡?2
+0é¡º___ 2789003564:2550273072 0), len(80)
+>>src(IDL yu_do_do@hotmail.com 1 2011---é¡?20é¡?20é¡º___ 2789003564:2550273072 0
+)
+CMsnChat::read_callback>>>read: (CHL 0 61680678311799034841356723335), len(35)
+CMsnChat::Send: >>send: (QRY 12 PROD0120PW!CCV9@ 32
+fd3b8fc4ee9547ecdd78a2eb53a2691f
+)
+CMsnChat::read_callback>>>read: (QRY 12), len(6)
+
+CMsnChat::read_callback>>>read: (XFR 11 SB 64.4.35.57:1863 CKI 538790116.1211524
+9.13629220 U messenger.msn.com 1
+CHL 0 12557583981238528481), len(107)
+>>src(11 SB 64.4.35.57:1863 CKI 538790116.12115249.13629220 U messenger.msn.com
+1
+CHL 0 12557583981238528481)
+
+CMsnChat::read_callback>>>read: (RNG 853045962 64.4.61.152:1863 CKI 138218181.19
+286130 zhengshuxin@hotmail.com zhengshuxin@hotmail.com U messenger.msn.com 1), l
+en(123)
+unkown cmd(RNG), args(853045962 64.4.61.152:1863 CKI 138218181.19286130 zhengshu
+xin@hotmail.com zhengshuxin@hotmail.com U messenger.msn.com 1)
+
+
+//////////////
+CMsnChat::read_callback>>>read: (RNG 853045962 64.4.61.152:1863 CKI 138218181.19
+286130 zhengshuxin@hotmail.com zhengshuxin@hotmail.com U messenger.msn.com 1), l
+en(123)
+unkown cmd(RNG), args(853045962 64.4.61.152:1863 CKI 138218181.19286130 zhengshu
+xin@hotmail.com zhengshuxin@hotmail.com U messenger.msn.com 1)
+CMsnChat::read_callback>>>read: (FLN heshanlily@hotmail.com 1 0:0), len(32)
+unkown cmd(FLN), args(heshanlily@hotmail.com 1 0:0)
+CMsnChat::read_callback>>>read: (RNG 536612188 64.4.61.29:1863 CKI 2120796.21965
+162 zhengshuxin@hotmail.com zhengshuxin@hotmail.com U messenger.msn.com 1), len(
+120)
+unkown cmd(RNG), args(536612188 64.4.61.29:1863 CKI 2120796.21965162 zhengshuxin
+@hotmail.com zhengshuxin@hotmail.com U messenger.msn.com 1)
+CMsnChat::read_callback>>>read: (RNG 953807979 64.4.61.197:1863 CKI 8210764.1042
+24245 zhengshuxin@hotmail.com zhengshuxin@hotmail.com U messenger.msn.com 1), le
+n(122)
+unkown cmd(RNG), args(953807979 64.4.61.197:1863 CKI 8210764.104224245 zhengshux
+in@hotmail.com zhengshuxin@hotmail.com U messenger.msn.com 1)
+CMsnChat::read_callback>>>read: (RNG 1926397867 64.4.44.72:1863 CKI 2192885.1217
+0224 zhengshuxin@hotmail.com zhengshuxin@hotmail.com U messenger.msn.com 1), len
+(121)
+unkown cmd(RNG), args(1926397867 64.4.44.72:1863 CKI 2192885.12170224 zhengshuxi
+n@hotmail.com zhengshuxin@hotmail.com U messenger.msn.com 1)
+
+
+/////
+(17:54:08) msn: C: NS 000: PNG
+(17:54:08) msn: S: NS 000: QNG 46
+(17:54:16) msn: S: NS 000: RNG 121706001 207.46.124.189:1863 CKI 22461186.213163221 zhengshuxin@hotmail.com zhengshuxin@hotmail.com U messenger.msn.com 1
+(17:54:16) msn: new httpconn (0296E270)
+(17:54:16) dnsquery: Performing DNS lookup for 122.49.0.200
+(17:54:16) dnsquery: IP resolved for 122.49.0.200
+(17:54:16) proxy: Attempting connection to 122.49.0.200
+(17:54:16) proxy: Connecting to 207.46.124.189:1863 via 122.49.0.200:9283 using HTTP
+(17:54:16) proxy: Connection in progress
+(17:54:16) proxy: Connected to 207.46.124.189:1863.
+(17:54:16) proxy: Using CONNECT tunneling for 207.46.124.189:1863
+(17:54:16) proxy: HTTP proxy connection established
+(17:54:16) proxy: Connected to 207.46.124.189:1863.
+(17:54:16) msn: C: SB 001: ANS 1 forward_day@hotmail.com 22461186.213163221 121706001
+(17:54:16) msn: S: SB 001: IRO 1 1 1 zhengshuxin@hotmail.com Ö£Ê÷ÐÂ 0
+(17:54:16) msn: S: SB 001: ANS 1 OK
+(17:54:17) msn: S: SB 001: MSG zhengshuxin@hotmail.com zhengshuxin@hotmail.com 96
+(17:54:41) msn: S: SB 001: MSG zhengshuxin@hotmail.com zhengshuxin@hotmail.com 133
+(17:54:41) gtkspell: Failed to setup GtkSpell: enchant error for language: zh_CN
+(17:54:41) gtkconv: setting active conversation on toolbar 02932018
+(17:54:41) gtkconv: setting active conversation on toolbar 02932018
+(17:54:41) prefs: /pidgin/conversations/toolbar/wide changed, scheduling save.
+(17:54:42) win32placement: Window RECT: L:0 R:626 T:14 B:518
+(17:54:42) win32placement: Working Area RECT: L:0 R:1152 T:0 B:834

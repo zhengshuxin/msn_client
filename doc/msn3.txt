@@ -1,0 +1,11 @@
+MSG Hotmail Hotmail 289
+
+MIME-Version: 1.0
+Content-Type: text/x-msmsgsinitialmdatanotification; charset=UTF-8
+
+Mail-Data: <MD><E><I>0</I><IU>0</IU><O>0</O><OU>0</OU></E><Q><QTM>409600</QTM><QNM>204800</QNM></Q></MD>
+Inbox-URL: /cgi-bin/HoTMaiL
+Folders-URL: /cgi-bin/folders
+Post-URL: http://www.hotmail.com
+
+QRY 5

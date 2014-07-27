@@ -1,0 +1,58 @@
+>>DAT: 
+<ml l='1'>
+  <d n='hotmail.com'>
+    <c n='heshanlily t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+    <c n='frongy_98 t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+    <c n='shark_yang t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+    <c n='henrydai1973 t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+    <c n='zhengshuxin t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+    <c n='kirk1368 t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+    <c n='brush_7color t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+    <c n='yu_do_do t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+    <c n='cbuiler_guo t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+    <c n='chyh00 t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+    <c n='sun_ge t='1'><s l='5' n='IM' /><s l='4' n='PE' /></c>
+  </d>
+  <d n='msn.com'>
+    <c n='land_beijing t='1'><s l='3' n='IM' /><s l='2' n='PE'/></c>
+  </d>
+</ml>
+
+>>DAT: <ml l='1'><d n='hotmail.com'><c n='heshanlily t='1'><s l='3' n='IM' /><s
+l='2' n='PE' /></c>
+<c n='frongy_98 t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+<c n='shark_yang t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+<c n='henrydai1973 t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+<c n='zhengshuxin t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+<c n='kirk1368 t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+<c n='brush_7color t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+<c n='yu_do_do t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+<c n='cbuiler_guo t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+<c n='chyh00 t='1'><s l='3' n='IM' /><s l='2' n='PE' /></c>
+<c n='sun_ge t='1'><s l='5' n='IM' /><s l='4' n='PE' /></c>
+</d><d n='msn.com'><c n='land_beijing t='1'><s l='3' n='IM' /><s l='2' n='PE' />
+</c>
+</d></ml>
+
+ADL 8 910
+<ml l="1">
+  <d n="hotmail.com">
+    <c n="cbuiler_guo" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c>
+    <c n="sun_ge" t="1"><s l="1" n="IM" /><s l="1" n="PE" /></c>
+    <c n="chyh00" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c>
+    <c n="frongy_98" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c>
+    <c n="heshanlily" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c>
+    <c n="kirk1368" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c>
+    <c n="zhengshuxin" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c>
+    <c n="shark_yang" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c>
+    <c n="yu_do_do" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c>
+    <c n="brush_7color" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c>
+    <c n="henrydai1973" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c>
+  </d>
+  <d n="live.com">
+    <c n="support.service" t="32"><s l="2" n="IM" /><s l="2" n="PE" /></c>
+  </d>
+  <d n="msn.com">
+    <c n="land_beijing" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c>
+  </d>
+</ml>

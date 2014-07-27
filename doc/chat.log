@@ -1,0 +1,83 @@
+Pidgin Debug Log : 2011-8-20 22:30:49
+(22:29:48) msn: S: NS 000: NOT 604
+(22:29:53) msn: S: NS 000: RNG 1932934139 64.4.61.71:1863 CKI 90193166.224191117 zhengshuxin@hotmail.com zhengshuxin@hotmail.com U messenger.msn.com 1
+(22:29:53) msn: new httpconn (028BC798)
+(22:29:53) dnsquery: Performing DNS lookup for 122.49.0.200
+(22:29:53) dnsquery: IP resolved for 122.49.0.200
+(22:29:53) proxy: Attempting connection to 122.49.0.200
+(22:29:53) proxy: Connecting to 64.4.61.71:1863 via 122.49.0.200:9283 using HTTP
+(22:29:53) proxy: Connection in progress
+(22:29:53) proxy: Connected to 64.4.61.71:1863.
+(22:29:53) proxy: Using CONNECT tunneling for 64.4.61.71:1863
+(22:29:53) proxy: HTTP proxy connection established
+(22:29:53) proxy: Connected to 64.4.61.71:1863.
+(22:29:53) msn: C: SB 002: ANS 1 forward_day@hotmail.com;{185E3E23-4AC4-65EF-2658-5EC85E175A2D} 90193166.224191117 1932934139
+(22:29:54) msn: S: SB 002: IRO 1 1 2 zhengshuxin@hotmail.com;{0a68b3b4-27a9-46f4-a98e-05ffd16d684d} zhengshuxin@hotmail.com 0:0
+(22:29:54) msn: S: SB 002: IRO 1 2 2 zhengshuxin@hotmail.com 郑树新 0:0
+(22:29:54) msn: S: SB 002: ANS 1 OK
+(22:29:54) msn: S: SB 002: JOI forward_day@hotmail.com 郑树新--视频加速器：http://v.hexun.com/DownloadNew.htm 2416181284:2147619840
+(22:29:54) msn: Processing queue
+(22:29:54) msn: switchboard send msg..
+(22:29:54) msn: C: SB 002: MSG 2 U 99
+(22:29:55) msn: Sending UUX command with payload: <EndpointData><Capabilities>262180:00</Capabilities></EndpointData>
+(22:29:55) msn: C: NS 000: UUX 19 67
+(22:29:55) msn: Sending UUX command with payload: <PrivateEndpointData><EpName>Pidgin</EpName><Idle>false</Idle><ClientType>1</ClientType><State>NLN</State></PrivateEndpointData>
+(22:29:55) msn: C: NS 000: UUX 20 128
+(22:29:55) msn: Sending UUX command with payload: <Data><PSM/><CurrentMedia/><MachineGuid>185E3E23-4AC4-65EF-2658-5EC85E175A2D</MachineGuid><DDP/></Data>
+(22:29:55) msn: C: NS 000: UUX 21 103
+(22:29:55) msn: C: NS 000: CHG 22 NLN 2416181284:00 0
+(22:29:55) msn: S: NS 000: NLN NLN forward_day@hotmail.com 1 郑树新--视频加速器：http://v.hexun.com/DownloadNew.htm 262180:2147483648 0
+(22:29:55) msn: S: NS 000: UBX forward_day@hotmail.com 1 559
+(22:29:55) msn: UBX received.
+(22:29:55) msn: msn get PSM
+(22:29:55) msn: Get CurrentMedia
+(22:29:55) msn: No currentmedia string
+(22:29:55) msn: Get EndpointData
+(22:29:55) msn: S: NS 000: UUX 19 0
+(22:29:55) msn: UUX received.
+(22:29:55) msn: S: NS 000: UUX 20 0
+(22:29:55) msn: UUX received.
+(22:29:55) msn: S: NS 000: UUX 21 0
+(22:29:55) msn: UUX received.
+(22:29:55) msn: S: NS 000: NLN NLN forward_day@hotmail.com 1 郑树新--视频加速器：http://v.hexun.com/DownloadNew.htm 2416181284:2147619840 0
+(22:29:55) msn: S: NS 000: UBX forward_day@hotmail.com 1 563
+(22:29:55) msn: UBX received.
+(22:29:55) msn: msn get PSM
+(22:29:55) msn: Get CurrentMedia
+(22:29:55) msn: No currentmedia string
+(22:29:55) msn: Get EndpointData
+(22:29:55) msn: S: NS 000: CHG 22 NLN 2416181284:0 0
+(22:30:00) Gtk: 找不到图标“"C:\Program Files\Google\Picasa3\PicasaPhotoViewer.exe",-102”。“hicolor”主题也没有找到，可能您需要先安装它。
+您可以从下面的位置获得一个副本：
+	http://icon-theme.freedesktop.org/releases
+(22:30:03) msn: S: SB 002: MSG zhengshuxin@hotmail.com zhengshuxin@hotmail.com 96
+(22:30:03) msn: S: SB 002: MSG zhengshuxin@hotmail.com zhengshuxin@hotmail.com 132
+(22:30:03) gtkspell: Failed to setup GtkSpell: enchant error for language: zh_CN
+(22:30:03) gtkconv: setting active conversation on toolbar 02888DD0
+(22:30:03) gtkconv: setting active conversation on toolbar 02888DD0
+(22:30:03) prefs: /pidgin/conversations/toolbar/wide changed, scheduling save.
+(22:30:03) win32placement: Window RECT: L:894 R:1242 T:101 B:525
+(22:30:03) win32placement: Working Area RECT: L:0 R:1366 T:0 B:738
+(22:30:09) util: Writing file blist.xml to directory C:\Documents and Settings\zsx\Application Data\.purple
+(22:30:09) util: Writing file C:\Documents and Settings\zsx\Application Data\.purple\blist.xml
+(22:30:09) util: Writing file prefs.xml to directory C:\Documents and Settings\zsx\Application Data\.purple
+(22:30:09) util: Writing file C:\Documents and Settings\zsx\Application Data\.purple\prefs.xml
+(22:30:18) msn: switchboard send msg..
+(22:30:18) msn: C: SB 002: MSG 3 U 96
+(22:30:19) msn: send IM {hello} to zhengshuxin@hotmail.com
+(22:30:19) msn: prepare to send online Message
+(22:30:19) msn: send via switchboard
+(22:30:19) msn: switchboard send msg..
+(22:30:19) msn: C: SB 002: MSG 4 A 149
+(22:30:19) sound: Playing C:\Program Files\Pidgin\sounds\purple\send.wav
+(22:30:19) msn: S: SB 002: ACK 4
+(22:30:26) msn: C: NS 000: PNG
+(22:30:26) msn: S: NS 000: QNG 44
+(22:30:28) msn: destroy httpconn (0253E188)
+(22:30:48) msn: switchboard send msg..
+(22:30:48) msn: C: SB 002: MSG 5 D 801
+(22:30:48) msn: S: SB 002: ACK 5
+(22:30:48) msn: switchboard send msg..
+(22:30:48) msn: C: SB 002: MSG 6 D 801
+(22:30:48) msn: S: SB 002: ACK 6
+(22:30:49) prefs: /pidgin/filelocations/last_save_folder changed, scheduling save.

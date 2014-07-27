@@ -1,0 +1,399 @@
+[2011-05-28 22:06:40Z] NSMessageProcessor: MSNPSharp.NSMessageHandler added to handler list.
+[2011-05-28 22:06:41Z] NSMessageProcessor: End Connect Callback
+[2011-05-28 22:06:41Z] NSMessageProcessor: End Connect Callback Daarna
+[2011-05-28 22:06:41Z] NSMessageProcessor: Connected
+[2011-05-28 22:06:41Z] SDGBridge: P2PBridge 1:SDGBridge disposed
+[2011-05-28 22:06:41Z] NSMessageProcessor: Outgoing message:
+VER 1 MSNP21 CVR0
+
+[2011-05-28 22:06:41Z] NSMessageProcessor: Outgoing message:
+CVR 2 0x040c winnt 6.1.1 i386 MSNMSGR 15.4.3508.1109 MSNMSGR forward_day@hotmail.com 0
+
+[2011-05-28 22:06:41Z] NSMessageProcessor: Outgoing message:
+USR 3 SSO I forward_day@hotmail.com
+
+[2011-05-28 22:06:41Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:41Z] NSMessageHandler: Incoming NS command: VER 1 MSNP21
+
+[2011-05-28 22:06:41Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:41Z] NSMessageHandler: Incoming NS command: CVR 2 14.0.8117 14.0.8117 14.0.8117 http://msgruser.dlservice.microsoft.com/download/A/6/1/A616CCD4-B0CA-4A3D-B975-3EDB38081B38/fr/wlsetup-cvr.exe http://download.live.com/?sku=messenger
+
+[2011-05-28 22:06:41Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:41Z] NSMessageHandler: Incoming NS command: XFR 3 NS 64.4.61.163:1863 U D VmVyc2lvbjogMQ0KWGZyQ291bnQ6IDENCg==
+
+[2011-05-28 22:06:41Z] NSMessageProcessor: Outgoing message:
+OUT
+
+[2011-05-28 22:06:41Z] NSMessageProcessor: Disconnected
+[2011-05-28 22:06:41Z] SDGBridge: P2PBridge 1:SDGBridge disposed
+[2011-05-28 22:06:42Z] NSMessageProcessor: End Connect Callback
+[2011-05-28 22:06:42Z] NSMessageProcessor: End Connect Callback Daarna
+[2011-05-28 22:06:42Z] NSMessageProcessor: Connected
+[2011-05-28 22:06:42Z] SDGBridge: P2PBridge 1:SDGBridge disposed
+[2011-05-28 22:06:42Z] NSMessageProcessor: Outgoing message:
+VER 1 MSNP21 CVR0
+
+[2011-05-28 22:06:42Z] NSMessageProcessor: Outgoing message:
+CVR 2 0x040c winnt 6.1.1 i386 MSNMSGR 15.4.3508.1109 MSNMSGR forward_day@hotmail.com VmVyc2lvbjogMQ0KWGZyQ291bnQ6IDE=
+
+[2011-05-28 22:06:42Z] NSMessageProcessor: Outgoing message:
+USR 3 SSO I forward_day@hotmail.com
+
+[2011-05-28 22:06:42Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:42Z] NSMessageHandler: Incoming NS command: VER 1 MSNP21
+
+[2011-05-28 22:06:42Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:42Z] NSMessageHandler: Incoming NS command: CVR 2 14.0.8117 14.0.8117 14.0.8117 http://msgruser.dlservice.microsoft.com/download/A/6/1/A616CCD4-B0CA-4A3D-B975-3EDB38081B38/fr/wlsetup-cvr.exe http://download.live.com/?sku=messenger
+
+[2011-05-28 22:06:42Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:42Z] NSMessageHandler: Incoming NS command: GCF 0 5700
+<Policies><Policy type="SHIELDS" checksum="6BB3CDF0B183D2FE1281441CC1BBDA60"><config>  <shield>    <cli maj="7" min="0" minbld="0" maxbld="9999" deny="" />  </shield>  <block>    <hashes>    </hashes>    <regexp>      <imtext value="cGhvdG8yMzRcLnppcA==" />      <imtext value="aW1nMDIxXC56aXA=" />      <imtext value="dGFueWFiYWJlXC56aXA=" />      <imtext value="c3R1ZmZcLnppcA==" />      <imtext value="Zm90b3NcLnppcA==" />      <imtext value="dHVmb3Rv" />      <imtext value="Z2V0LW1lc3Nlbmdlcg==" />      <imtext value="Mm5udmM3" />      <imtext value="YmxvY2tpbnJpbw==" />      <imtext value="bWVzc2FnaW5nLW5hbWVz" />      <imtext value="cGljdHVyYTAwMg==" />      <imtext value="bWVzc2VuZ2VyLXNjYW4=" />      <imtext value="c3VtbWVyMjAwOA==" />      <imtext value="bWVzc2VuZ2VyZGVsZXRlY2hlY2tlcg==" />      <imtext value="cGhvdG9hbGJ1bTIwMDc=" />      <imtext value="aW1hZ2UwMjlcLnppcA==" />      <imtext value="Zm90b183ODFcLnppcA==" />      <imtext value="Y2hpcnN0bWFzLTIwMDdcLnppcA==" />      <imtext value="cGhvdG8yMDA3LTEyXC56aXA=" />      <imtext value="aW1nNS0yMDA3XC56aXA=" />      <imtext value="bXlwaWN0dXJlcy0wMTA4XC56aXA=" />      <imtext value="cGhvdG9zMS0yMDA4XC56aXA=" />      <imtext value="aGFwcHkyMDA4XC5leGU=" />      <imtext value="aGFwcHlfMjAwOFwuZXhl" />      <imtext value="aGFwcHktMjAwOFwuZXhl" />      <imtext value="bmV3X3llYXJzX2xldHRlcl9mbGFzaFwuZXhl" />      <imtext value="bWFpbm1zblwuY29t" />      <imtext value="bWFpbm1zblwubmV0" />      <imtext value="Zm1jb25zdWx0aW5n" />      <imtext value="YmV6Z2lcLmluZm8=" />      <imtext value="c3VsYW5kaXJtYQ==" />      <imtext value="dHVuYWJhbGlnaQ==" />      <imtext value="eW9ydW5nZXNlbA==" />      <imtext value="dHVoYWZraW1zZQ==" />      <imtext value="YWNpc2FsY2FwXC5pbmZv" />      <imtext value="Ym95YW1hZ3VjdQ==" />      <imtext value="dHV0dXNrYW5saWs=" />      <imtext value="bXltc25nYWxsZXJ5" />      <imtext value="aW1hZ2UwMzFcLnppcA==" />      <imtext value="Zm90bzcyMmE2" />      <imtext value="cGhvdG8yMVwuemlw" />      <imtext value="cGljdHVyZTIyXC56aXA=" />      <imtext value="cGljdHVyZXo5MjNcLnppcA==" />      <imtext value="cGhvdG9fNjg4LWpwZ1wuemlw" />      <imtext value="bXlwaG90bzk0XC56aXA=" />      <imtext value="dmlkZW9cLmV4ZQ==" />      <imtext value="a3V6ZW5cLmV4ZQ==" />      <imtext value="bWlyY1wuZXhl" />      <imtext value="YmFja2Rvb3I6aXJjL2Zsb29kXC5jYw==" />      <imtext value="Zm90b18wMjdcLnppcA==" />      <imtext value="Zm90bzcwOGs2XC56aXA=" />      <imtext value="bXNuYmxvY2tsaXN0XC5jb20=" />      <imtext value="bXNuLWZyaWVuZFwuY29t" />      <imtext value="cXVpZW50ZWFkbWl0ZVwuY29t" />      <imtext value="Y2hlY2ttZXNzZW5nZXJcLm5ldA==" />      <imtext value="bXNuYmxvY2tlcmxpc3RcLmNvbQ==" />      <imtext value="bXNubGlzdHN0YXR1c1wuY29t" />      <imtext value="ZnJpZW5kbHktb2ZmZXJcLmNvbQ==" />      <imtext value="c2V0dXBcLmV4ZQ==" />      <imtext value="aG9zdGlsZWFwcGxldA==" />      <imtext value="Z3NkYWdkZmdhc2RnczI0NTc0NTIyNDdcLmV4ZQ==" />      <imtext value="Z3NkZGFzMjQ1ODcyMTRnc2RcLmV4ZQ==" />      <imtext value="Zm90by0zMTFfanBlZw==" />      <imtext value="aW1hZ2UyMDZcLmpwZy13d3dcLnBob3Rvc2hhcmVcWzFdXC5jb20=" />      <imtext value="aW1hZ2UyMDZcLmpwZw==" />      <imtext value="YnVzaFwuY29t" />      <imtext value="Y2FtZGFcLmV4ZQ==" />      <imtext value="eW91dHViZV9naXJpc19wcm9ncmFtaVwuZXhl" />      <imtext value="cjU3OWRrYTkyalwuemlw" />      <imtext value="bW9uY2xvY2hlclwuY29t" />      <imtext value="aW1hZ2Vzd2l0Y2hcLmluZm8=" />      <imtext value="bmV3ZXN0cGljdHVyZTAzXC5qcGc=" />      <imtext value="bm90aWNpYXNkb2JyYXNpbFwuY29tXC5zYXBvXC5wdC9ub3RpY2lhdXJnZW50ZWJyYXNpbG51bWVybzk4MjFcLmNvbQ==" />      <imtext value="d2luZG93c215X3Bob3Rvc18xNTMwMVwuemlw" />      <imtext value="cGhvdG9zXzE1MzAxXC56aXA=" />      <imtext value="aW1wbGF5XC5jb20=" />      <imtext value="Ym9ieXVwXC5jb20=" />      <imtext value="Ym9iYmxha1wuY29t" />      <imtext value="cGljcy1hdC10aGUtcGFydHlcLmNvbQ==" />      <imtext value="Ym9iem9wXC5jb20=" />      <imtext value="bW9vcnNoXC5jb20=" />      <imtext value="Ym9ieXVw" />      <imtext value="d293YmFtXC5jb20=" />      <imtext value="Zm90b1wuZXhl" />      <imtext value="ZHNjMjAwOTAxMTdcLmpwZ1wuZXhl" />      <imtext value="ZnJpZW5kaW1zXC5jb20=" />      <imtext value="bm93cG91bmRzXC5jb20=" />      <imtext value="Y2xpcGRlZXBzXC5jb20=" />      <imtext value="L3VyYmxvY2s=" />      <imtext value="aW1hZ2VzXC5jb29scGFnZVwuYml6L2ltYWdlc1wucGhw" />      <imtext value="Y2FzYTFcLmV4ZQ==" />      <imtext value="YW5pbWFjaW9uXC5leGU=" />      <imtext value="XC5cLi9ibG9ja1wudHh0" />    </regexp>  </block></config></Policy><Policy type="ABCH" checksum="03DC55910A9CB79133F1576221A80346"><policy><set id="push" service="ABCH" priority="200">      <r id="pushstorage" threshold="180000" />    </set><set id="delaysup" service="ABCH" priority="150">  <r id="whatsnew" threshold="1800000" />  <r id="whatsnew_storage_ABCH_delay" timer="1800000" />  <r id="whatsnewt_link" threshold="900000" trigger="QueryActivities" /></set>  <c id="PROFILE_Rampup">100</c></policy></Policy><Policy type="ERRORRESPONSETABLE" checksum="6127EEDCE860F45C1692896F5248AF6F"><Policy> <Feature type="3" name="P2P">  <Entry hr="0x81000398" action="3"/>  <Entry hr="0x82000020" action="3"/> </Feature> <Feature type="4">  <Entry hr="0x81000440" /> </Feature> <Feature type="6" name="TURN">  <Entry hr="0x8007274C" action="3" />  <Entry hr="0x82000020" action="3" />  <Entry hr="0x8007274A" action="3" /> </Feature></Policy></Policy><Policy type="P2P" checksum="815D4F1FF8E39A85F1F97C4B16C45177"><ObjStr SndDly="1" /></Policy><Policy type="CIRCLES" checksum="9208C5655F8D96CBBD9873181E5E79BD"><Policy type="CIRCLES" >     <Msgr cMember="40"/></Policy></Policy></Policies>
+
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: photo234\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: img021\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: tanyababe\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: stuff\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: fotos\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: tufoto
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: get-messenger
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: 2nnvc7
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: blockinrio
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: messaging-names
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: pictura002
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: messenger-scan
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: summer2008
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: messengerdeletechecker
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: photoalbum2007
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: image029\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: foto_781\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: chirstmas-2007\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: photo2007-12\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: img5-2007\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: mypictures-0108\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: photos1-2008\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: happy2008\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: happy_2008\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: happy-2008\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: new_years_letter_flash\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: mainmsn\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: mainmsn\.net
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: fmconsulting
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: bezgi\.info
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: sulandirma
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: tunabaligi
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: yorungesel
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: tuhafkimse
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: acisalcap\.info
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: boyamagucu
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: tutuskanlik
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: mymsngallery
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: image031\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: foto722a6
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: photo21\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: picture22\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: picturez923\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: photo_688-jpg\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: myphoto94\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: video\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: kuzen\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: mirc\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: backdoor:irc/flood\.cc
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: foto_027\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: foto708k6\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: msnblocklist\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: msn-friend\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: quienteadmite\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: checkmessenger\.net
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: msnblockerlist\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: msnliststatus\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: friendly-offer\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: setup\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: hostileapplet
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: gsdagdfgasdgs2457452247\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: gsddas24587214gsd\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: foto-311_jpeg
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: image206\.jpg-www\.photoshare\[1]\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: image206\.jpg
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: bush\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: camda\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: youtube_giris_programi\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: r579dka92j\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: monclocher\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: imageswitch\.info
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: newestpicture03\.jpg
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: noticiasdobrasil\.com\.sapo\.pt/noticiaurgentebrasilnumero9821\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: windowsmy_photos_15301\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: photos_15301\.zip
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: implay\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: bobyup\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: bobblak\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: pics-at-the-party\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: bobzop\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: moorsh\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: bobyup
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: wowbam\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: foto\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: dsc20090117\.jpg\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: friendims\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: nowpounds\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: clipdeeps\.com
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: /urblock
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: images\.coolpage\.biz/images\.php
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: casa1\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: animacion\.exe
+[2011-05-28 22:06:42Z] NSMessageHandler: Censor: \.\./block\.txt
+[2011-05-28 22:06:42Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:42Z] NSMessageHandler: Incoming NS command: USR 3 SSO S MBI_KEY V/NxHAEQEhG0Ch3kcis73YYjWZE4+7+6ciJz3zmSgGQFi5oZDHP97Sj3UZG3hmLj
+
+[2011-05-28 22:06:42Z] SingleSignOnManager: Request new tickets: Clear, Contact, OIM, Storage, Web, WhatsUp, Directory
+[2011-05-28 22:06:45Z] >>>key: QOr9lxN/a7JUNKBXr+kd6VDjv5Wf5Eab
+[2011-05-28 22:06:45Z] >>>nonce: V/NxHAEQEhG0Ch3kcis73YYjWZE4+7+6ciJz3zmSgGQFi5oZDHP97Sj3UZG3hmLj
+[2011-05-28 22:06:45Z] >>>hash1: OlpWeEx1neUI4mmiSeMSwsTlpF0=
+[2011-05-28 22:06:45Z] >>>hash1: ROWQffBAnynI52R5Kw0tQFgouEU=
+[2011-05-28 22:06:45Z] >>>key2: YayyMr/ggTyQL3fCw2bcFp5fhkl72TV/
+[2011-05-28 22:06:45Z] >>>key3: xlfoFbH4f4TeYUoYucMh/8PgLOl0x/1b
+[2011-05-28 22:06:45Z] >>>hash: D+N79xZwCI5YqRoxvNomWHnKFN0=
+[2011-05-28 22:06:45Z] NSMessageProcessor: Outgoing message:
+USR 4 SSO S t=EwAIAswbAQAUs1/VcBU2sH7mwYy3BysWZ71CRDGAAEl1Hbtue1ilWQQUrg2+CSlsFcqCLi1MbaDBv9MnLnpRoqvZzVMtMPcTxyVaNm7Fg8GLYZZtM0sMgLhkfpIDM6zsnzrnnSPWUxj8Q3QcLRPvc6UQMW9ynO3Fkf7Wr/fg2OweXMKWlUtgfoR5paMzRbZc5mD/WzOUF8voxYKlnexTA2YAAAjZILFkpTQ/M1gBcFr0VNtrodirTb+BE1Qdt0QlEyiRlbK6JnI5ekQzsWo7J0uAshcxXzkrFhX6owcq3ZSD4z/kKIgQCqo52oCQ2+rtohCyZvZMSBSL4oYOAE3g6cNc/hbKKUXEY/MSiWaIbZoiuY4rn9uVGCJucwVK2oYTvX/3L0RFDjmsOGgtmlOeX3ibx3EDuThZ1hhX6UHt2Ih6ESJVrB1A6TCFmjdJSqI6+QGFEr0rY3/FAq2f64oJH3aZKMI570bn7HdgHKEek4PwmxXq5Vth434RFPwfjO214miHu71t5l5lAQtS6uNarpfjp6l6bQ7TXuKm/Z2CNam6hFBL/7TfaN3PFa2/gwtkOk9lYTigRU5/rzY4hGCAAwcp5KG7PofDcJ9fweYyVh8H50RMfJEOIVm4W6qnQ3RLsiEdU5D1JK7SK9XizPK+WIsLHzww4biClUfAaWqk0TREnXRLsuqDAQ==&p= HAAAAAEAAAADZgAABIAAAAgAAAAUAAAASAAAAAAAAAAAAAAAD+N79xZwCI5YqRoxvNomWHnKFN0mSi/mxziOSqT8W5Y0h+zi0yd7KrrdBQvIbnjI3IsWT5bsvJYVZkndRqmbjxWxPkO7aFuZ6ncr18W4bFuBMgB1I2b9FSvBJ8c= {1b355d68-d01c-4ac7-905c-523744db247e}
+
+[2011-05-28 22:06:46Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:46Z] NSMessageHandler: Incoming NS command: USR 4 OK forward_day@hotmail.com 1 0
+
+[2011-05-28 22:06:47Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:47Z] NSMessageHandler: Incoming NS command: CHL 0 61939334118727383101378035275
+
+[2011-05-28 22:06:47Z] NSMessageProcessor: Outgoing message:
+QRY 5 PROD0120PW!CCV9@ 32
+94e09bb34bb044efb61cc5a81f8f41cf
+
+[2011-05-28 22:06:47Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:47Z] NSMessageHandler: Incoming NS command: SBS 0 null
+
+[2011-05-28 22:06:47Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:47Z] NSMessageHandler: Incoming NS command: MSG Hotmail Hotmail 293
+MIME-Version: 1.0
+Content-Type: text/x-msmsgsprofile; charset=UTF-8
+EmailEnabled: 1
+MemberIdHigh: 425982
+MemberIdLow: -1817495478
+lang_preference: 1033
+country: US
+Kid: 0
+Flags: 1610613827
+sid: 72652
+ClientIP: 123.108.223.22
+Nickname: sss
+RouteInfo: msnp://64.4.61.163/01392EFB
+
+
+
+[2011-05-28 22:06:47Z] <MSNPSharp.IO.XMLContactList> Total loading time (by ticks): 0
+
+[2011-05-28 22:06:47Z] <MSNPSharp.IO.DeltasList> Total loading time (by ticks): 0
+
+[2011-05-28 22:06:47Z] AddressBook Version not match:
+MCL AddressBook Version: 1.0
+AddressBook Version Required:
+ContactListVersion 4.0.0.2295, DeltasList Version 4.0.0.2295
+The old mcl files for this account will be deleted and a new request for getting addressbook list will be post.
+[2011-05-28 22:06:47Z] <MSNPSharp.IO.XMLContactList> Total loading time (by ticks): 0
+
+[2011-05-28 22:06:47Z] <MSNPSharp.IO.DeltasList> Total loading time (by ticks): 0
+
+[2011-05-28 22:06:47Z] ContactService: Getting your membership list for the first time. If you have a lot of contacts, please be patient!
+[2011-05-28 22:06:47Z] MSNPSharp.Services.SharingServiceBindingWrapper is requesting a cachekey and preferred host for calling FindMembership
+[2011-05-28 22:06:48Z] Get redirect URL by HTTP error succeed, method FindMembership:
+ Original: byrdr.omega.contacts.msn.com
+ Redirect: proxy-bay.contacts.msn.com
+
+[2011-05-28 22:06:48Z] <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Header><ServiceHeader xmlns="http://www.msn.com/webservices/AddressBook"><Version>16.00.1219.0001</Version><CacheKey>14r2;ok0Cc7Sc2YOwEh2mDAheROHPqk6yfFx8Wo6dMwGFLn6NT4x2+Fh0qJYJIfN+Hxz2K+v++8PT6tBmn1Bmt/fyOqcafinjl84wj1HVxA+T+9BgKTBur51ZXx3OnKzx+PT6P45buznVmBTkhje+ul4/YpRxbmyMFVz663WxNba4cRA=</CacheKey><CacheKeyChanged>true</CacheKeyChanged><PreferredHostName>proxy-bay.contacts.msn.com</PreferredHostName><SessionId>ABCH.5c41188b-fe37-422b-a413-f739bb41ae31</SessionId></ServiceHeader></soap:Header><soap:Body><FindMembershipResponse xmlns="http://www.msn.com/webservices/AddressBook" /></soap:Body></soap:Envelope>
+[2011-05-28 22:06:49Z] <MSNPSharp.IO.DeltasList> serialize time (by ticks): 500
+[2011-05-28 22:06:49Z] <MSNPSharp.IO.MclFile> Write raw file time (by ticks): 0
+[2011-05-28 22:06:49Z] <MSNPSharp.IO.DeltasList> Total saving time (by ticks): 516
+
+[2011-05-28 22:06:49Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:49Z] NSMessageHandler: Incoming NS command: MSG Hotmail Hotmail 291
+MIME-Version: 1.0
+Content-Type: text/x-msmsgsinitialmdatanotification; charset=UTF-8
+
+
+Mail-Data: <MD><E><I>0</I><IU>0</IU><O>0</O><OU>0</OU></E><Q><QTM>409600</QTM><QNM>204800</QNM></Q></MD>
+Inbox-URL: /cgi-bin/HoTMaiL
+Folders-URL: /cgi-bin/folders
+Post-URL: http://www.hotmail.com
+
+
+
+[2011-05-28 22:06:49Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:49Z] NSMessageHandler: Incoming NS command: QRY 5
+
+[2011-05-28 22:06:51Z] Yahoo:support.service@live.com added to the Allow role list.
+[2011-05-28 22:06:51Z] WindowsLive:shark_yang@hotmail.com added to the Allow role list.
+[2011-05-28 22:06:51Z] WindowsLive:zhengshuxin@hotmail.com added to the Allow role list.
+[2011-05-28 22:06:51Z] WindowsLive:henrydai1973@hotmail.com added to the Allow role list.
+[2011-05-28 22:06:51Z] WindowsLive:brush_7color@hotmail.com added to the Allow role list.
+[2011-05-28 22:06:51Z] WindowsLive:kirk1368@hotmail.com added to the Allow role list.
+[2011-05-28 22:06:51Z] WindowsLive:yu_do_do@hotmail.com added to the Allow role list.
+[2011-05-28 22:06:51Z] WindowsLive:land_beijing@msn.com added to the Allow role list.
+[2011-05-28 22:06:51Z] WindowsLive:cbuiler_guo@hotmail.com added to the Allow role list.
+[2011-05-28 22:06:51Z] WindowsLive:chyh00@hotmail.com added to the Allow role list.
+[2011-05-28 22:06:51Z] WindowsLive:heshanlily@hotmail.com added to the Allow role list.
+[2011-05-28 22:06:51Z] WindowsLive:frongy_98@hotmail.com added to the Allow role list.
+[2011-05-28 22:06:51Z] WindowsLive:sun_ge@hotmail.com added to the Block role list.
+[2011-05-28 22:06:51Z] WindowsLive:henrydai1973@hotmail.com added to the Reverse role list.
+[2011-05-28 22:06:51Z] WindowsLive:kirk1368@hotmail.com added to the Reverse role list.
+[2011-05-28 22:06:51Z] WindowsLive:shark_yang@hotmail.com added to the Reverse role list.
+[2011-05-28 22:06:51Z] WindowsLive:land_beijing@msn.com added to the Reverse role list.
+[2011-05-28 22:06:51Z] WindowsLive:yu_do_do@hotmail.com added to the Reverse role list.
+[2011-05-28 22:06:51Z] WindowsLive:zhengshuxin@hotmail.com added to the Reverse role list.
+[2011-05-28 22:06:51Z] WindowsLive:heshanlily@hotmail.com added to the Reverse role list.
+[2011-05-28 22:06:51Z] WindowsLive:chyh00@hotmail.com added to the Reverse role list.
+[2011-05-28 22:06:51Z] WindowsLive:frongy_98@hotmail.com added to the Reverse role list.
+[2011-05-28 22:06:51Z] <MSNPSharp.IO.XMLContactList>: Saving underlying data...
+[2011-05-28 22:06:53Z] <MSNPSharp.IO.XMLContactList> serialize time (by ticks): 2016
+[2011-05-28 22:06:53Z] <MSNPSharp.IO.MclFile> Write raw file time (by ticks): 312500
+[2011-05-28 22:06:53Z] <MSNPSharp.IO.XMLContactList> Total saving time (by ticks): 2047
+
+[2011-05-28 22:06:53Z] ContactService: Getting your address book for the first time. If you have a lot of contacts, please be patient!
+[2011-05-28 22:06:53Z] MSNPSharp.Services.ABServiceBindingWrapper is requesting a cachekey and preferred host for calling ABFindContactsPaged
+[2011-05-28 22:06:54Z] Get redirect URL by HTTP error succeed, method ABFindContactsPaged:
+ Original: byrdr.omega.contacts.msn.com
+ Redirect: proxy-bay.contacts.msn.com
+
+[2011-05-28 22:06:54Z] <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Header><ServiceHeader xmlns="http://www.msn.com/webservices/AddressBook"><Version>16.00.1219.0001</Version><CacheKeyChanged>false</CacheKeyChanged><PreferredHostName>proxy-bay.contacts.msn.com</PreferredHostName><SessionId>ABCH.8b296125-9525-41e8-afbf-46e3efa52caf</SessionId></ServiceHeader></soap:Header><soap:Body><ABFindContactsPagedResponse xmlns="http://www.msn.com/webservices/AddressBook" /></soap:Body></soap:Envelope>
+[2011-05-28 22:06:55Z] WindowsLive:shark_yang@hotmail.com added to the Forward role list.
+[2011-05-28 22:06:55Z] WindowsLive:henrydai1973@hotmail.com added to the Forward role list.
+[2011-05-28 22:06:55Z] WindowsLive:forward_day@hotmail.com added to the Forward role list.
+[2011-05-28 22:06:55Z] WindowsLive:zhengshuxin@hotmail.com added to the Forward role list.
+[2011-05-28 22:06:55Z] WindowsLive:sun_ge@hotmail.com added to the Forward role list.
+[2011-05-28 22:06:55Z] WindowsLive:heshanlily@hotmail.com added to the Forward role list.
+[2011-05-28 22:06:55Z] WindowsLive:kirk1368@hotmail.com added to the Forward role list.
+[2011-05-28 22:06:55Z] WindowsLive:brush_7color@hotmail.com added to the Forward role list.
+[2011-05-28 22:06:55Z] WindowsLive:yu_do_do@hotmail.com added to the Forward role list.
+[2011-05-28 22:06:55Z] WindowsLive:land_beijing@msn.com added to the Forward role list.
+[2011-05-28 22:06:55Z] WindowsLive:cbuiler_guo@hotmail.com added to the Forward role list.
+[2011-05-28 22:06:55Z] WindowsLive:chyh00@hotmail.com added to the Forward role list.
+[2011-05-28 22:06:55Z] WindowsLive:frongy_98@hotmail.com added to the Forward role list.
+[2011-05-28 22:06:55Z] Update addressbook information succeed, abId: 00000000-0000-0000-0000-000000000000, LastChange: 2011-05-28T04:55:41.67-07:00, compared with: 0001-01-01T00:00:00.0000000
+[2011-05-28 22:06:55Z] <MSNPSharp.IO.XMLContactList>: Saving underlying data...
+[2011-05-28 22:06:56Z] <MSNPSharp.IO.XMLContactList> serialize time (by ticks): 31
+[2011-05-28 22:06:56Z] <MSNPSharp.IO.MclFile> Write raw file time (by ticks): 0
+[2011-05-28 22:06:56Z] <MSNPSharp.IO.XMLContactList> Total saving time (by ticks): 31
+
+[2011-05-28 22:06:56Z] NSMessageProcessor: Outgoing message:
+USR 6 SHA A PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTE2Ij8+CjxTaWduZWRUaWNrZXQgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYSIgdmVyPSIxIiBrZXlWZXI9IjEiPgogIDxEYXRhPlBEOTRiV3dnZG1WeWMybHZiajBpTVM0d0lpQmxibU52WkdsdVp6MGlkWFJtTFRFMklqOCtEUW84VkdsamEyVjBJSGh0Ykc1ek9uaHphVDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01TOVlUVXhUWTJobGJXRXRhVzV6ZEdGdVkyVWlJSGh0Ykc1ek9uaHpaRDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01TOVlUVXhUWTJobGJXRWlQZzBLSUNBOFZGTStNakF4TVMwd05TMHlPRlF4TkRvd05qbzFNQzR5TmpZMU9UTTBXand2VkZNK0RRb2dJRHhEU1VRK0xURTJNalEzT0RJd05qTXlNalkyT1RrME9EYzhMME5KUkQ0TkNqd3ZWR2xqYTJWMFBnPT08L0RhdGE+CiAgPFNpZz5SZHgzR1hzbWM3cnkwRm5CT2NuSHhJaE82alVtRCtOcENCd0JGMjc0ZDY0VVZUZjFRbFBLdE1KY01nVlVMK1U1N2RuN0laNDBKWVpPRTdYS09CdEc5d0F0MjhmVGwwV29id3dIWk1xa21WbjBlaW5aSys0ZGV6UnVIYThIUk94RlBFNzdlT3hZUVFVT3B6Y1lyZXMwclJLUWJkNmRrNmxLcy8vRFdERXF2K3c9PC9TaWc+CjwvU2lnbmVkVGlja2V0Pg==
+
+[2011-05-28 22:06:56Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:06:56Z] NSMessageHandler: Incoming NS command: USR 6 OK forward_day@hotmail.com 1 0
+
+[2011-05-28 22:06:56Z] MSNPSharp.Services.StorageServiceWrapper is requesting a cachekey and preferred host for calling GetProfile
+[2011-05-28 22:06:59Z] Get redirect URL by HTTP error succeed, method GetProfile:
+ Original: tkrdr.storage.msn.com
+ Redirect: by2.storage.msn.com:443
+
+[2011-05-28 22:06:59Z] <?xml version="1.0" encoding="utf-8"?><soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Header><AffinityCacheHeader xmlns="http://www.msn.com/webservices/storage/2008"><CacheKey>1ptF-z-u2ITeWKTVIKcC9TmflUadQnVAC9GtK-K3bzhEnyKy0j3l8GAw</CacheKey></AffinityCacheHeader><StorageUserHeader xmlns="http://www.msn.com/webservices/storage/2008"><Puid>0</Puid><Cid>0</Cid><ApplicationId>0</ApplicationId><TicketToken>t=EwDoAW+jAAAUVwo8hY/Rg6HvEdmXr19KcNgO+7mAANIJ3s8wC8MdH+sLx2KBvUgIIyF5+l3ryz3fsae/FsZdEqQGQul4dT83YllmN26ndxt8xHV0ydYaXiLZ6bwfdeHyOv3MMUrOZwEpFmRklMcvMJ3Q/Yai9no6H4XtsKVJzjh2D0odfX6G4K9Y9dN7D/HP++PN0fIo8yE489EHLuTJA2YAAAgNyJU8pkTfETgBpiSZQop831Rnjmk84s8FwV/SyxFftvWMgpgj3qHatzeVO+t7TJauGYuqbZoF8dx9kwf5XkLrkzcxwU43tglSaUJIdKXcHNqvnbDkg6FKKLrhZoTJ+T/R9v8xtgzk5DXixIrLXMVmUZDTqg2Ti7o+Z6IiQ2xbuVh8OOjUbxvhacljx2muLlWiQBxzxka6PwfvFfan0j7wD18OjlWMMs+4QOqpeyfEsrei0LgnBZR02a2Tf4OGl4R6Mvpbd2zEIgslchA2R2XrRtFuaOR045ze3E4VT67T9WAroFkV5MLNzhfQHkwPspqZAbXmYmqJklZoEhBkifUhoEZfh9LrVfqp9QOkDROayIqXTI4oXF9ZPn/HpOFx1USmdTt9DQdQkMr11iG/yJ0ya01ljSCEy7nPl1G0b9I3HtaQYwE=&amp;p=</TicketToken><IsAdmin>false</IsAdmin></StorageUserHeader></soap:Header><soap:Body><GetProfileResponse xmlns="http://www.msn.com/webservices/storage/2008" /></soap:Body></soap:Envelope>
+[2011-05-28 22:06:59Z] <MSNPSharp.IO.DeltasList> serialize time (by ticks): 0
+[2011-05-28 22:06:59Z] <MSNPSharp.IO.MclFile> Write raw file time (by ticks): 0
+[2011-05-28 22:06:59Z] <MSNPSharp.IO.DeltasList> Total saving time (by ticks): 0
+
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.DeltasList> serialize time (by ticks): 16
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.MclFile> Write raw file time (by ticks): 0
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.DeltasList> Total saving time (by ticks): 16
+
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.DeltasList> serialize time (by ticks): 0
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.MclFile> Write raw file time (by ticks): 0
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.DeltasList> Total saving time (by ticks): 0
+
+[2011-05-28 22:07:00Z] NSMessageProcessor: Outgoing message:
+ADL 7 132
+<ml><d n="hotmail.com"><c n="forward_day" t="1"><s l="3" n="IM" /><s l="3" n="PE" /><s l="3" n="PD" /><s l="3" n="PF"/></c></d></ml>
+
+[2011-05-28 22:07:00Z] #################### first contact ADL trasID: 8 ############################
+[2011-05-28 22:07:00Z] NSMessageProcessor: Outgoing message:
+ADL 8 910
+<ml l="1"><d n="hotmail.com"><c n="cbuiler_guo" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c><c n="sun_ge" t="1"><s l="1" n="IM" /><s l="1" n="PE" /></c><c n="chyh00" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c><c n="frongy_98" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c><c n="heshanlily" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c><c n="kirk1368" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c><c n="zhengshuxin" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c><c n="shark_yang" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c><c n="yu_do_do" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c><c n="brush_7color" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c><c n="henrydai1973" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c></d><d n="live.com"><c n="support.service" t="32"><s l="2" n="IM" /><s l="2" n="PE" /></c></d><d n="msn.com"><c n="land_beijing" t="1"><s l="3" n="IM" /><s l="3" n="PE" /></c></d></ml>
+
+[2011-05-28 22:07:00Z] #################### ADL trasID choosen: 8 ############################
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.XMLContactList>: Saving underlying data...
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.XMLContactList> serialize time (by ticks): 16
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.MclFile> Write raw file time (by ticks): 0
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.XMLContactList> Total saving time (by ticks): 16
+
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.DeltasList> serialize time (by ticks): 0
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.MclFile> Write raw file time (by ticks): 0
+[2011-05-28 22:07:00Z] <MSNPSharp.IO.DeltasList> Total saving time (by ticks): 0
+
+[2011-05-28 22:07:01Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:07:01Z] NSMessageHandler: Incoming NS command: NFY PUT 921
+Routing: 1.0\r\n
+To: 1:forward_day@hotmail.com\r\n
+From: 1:forward_day@hotmail.com\r\n
+\r\n
+Reliability: 1.0\r\n
+\r\n
+Notification: 1.0\r\n
+NotifNum: 0\r\n
+Uri: /user\r\n
+NotifType: Partial\r\n
+Content-Type: application/user+xml\r\n
+Content-Length: 698\r\n
+\r\n
+<user><s n="IM"><Status>NLN</Status><CurrentMedia></CurrentMedia></s><s n="PE"><UserTileLocation>0</UserTileLocation><FriendlyName>郑树新--视频加速器：http://v.hexun.com/DownloadNew.htm</FriendlyName><RUM></RUM><PSM></PSM><MachineGuid>1B401CA4-6915-4932-64E2-535D2B0F8537</MachineGuid><DDP></DDP></s><s n="PD"></s><sep n="IM" epid="{1b401ca4-6915-4932-64e2-535d2b0f8537}"><Capabilities>2416181284:2147619840</Capabilities></sep><sep n="PE" epid="{1b401ca4-6915-4932-64e2-535d2b0f8537}"><Capabilities>0:1073774592</Capabilities></sep><sep n="PD" epid="{1b401ca4-6915-4932-64e2-535d2b0f8537}"><EpName>Pidgin</EpName><Idle>false</Idle><ClientType>1</ClientType><State>NLN</State></sep></user>
+
+[2011-05-28 22:07:01Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:07:01Z] NSMessageHandler: Incoming NS command: ADL 7 OK
+
+[2011-05-28 22:07:01Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:07:01Z] NSMessageHandler: Incoming NS command: ADL 8 OK
+
+[2011-05-28 22:07:01Z] ContactService: All initial ADLs have processed.
+[2011-05-28 22:07:01Z] NSMessageProcessor: Outgoing message:
+PNG
+
+[2011-05-28 22:07:01Z] NSMessageProcessor: Outgoing message:
+PUT 10 932
+Routing: 1.0
+From: 1:forward_day@hotmail.com;epid={1b355d68-d01c-4ac7-905c-523744db247e}
+To: 1:forward_day@hotmail.com
+
+Reliability: 1.0
+Flags: ACK
+Stream: 1
+
+Publication: 1.0
+Content-Length: 676
+Content-Type: application/user+xml
+Uri: /user
+
+<user><s n="IM"><Status>NLN</Status><CurrentMedia></CurrentMedia></s><s n="PE"><UserTileLocation>&lt;msnobj Creator="forward_day@hotmail.com" Size="11425" Type="3" Location="MSNPSharpDefault" Friendly="AAA=" SHA1D="kO4Y89xI+uMaEi4jwGTAA8sDD0o=" SHA1C="8Nw4EDq7FAY+h9iWleW8pwkg848="/&gt;</UserTileLocation><FriendlyName>sss</FriendlyName><ColorScheme>-16777216</ColorScheme></s><sep n="IM"><Capabilities>2952823072:2558662528</Capabilities></sep><sep n="PE"><VER>MSNMSGR:15.4.3508.1109</VER><TYP>1</TYP><Capabilities>100663296:1142538240</Capabilities></sep><sep n="PD"><ClientType>1</ClientType><EpName>LENOVO-AB6FB4C2</EpName><Idle>false</Idle><State>NLN</State></sep></user>
+
+[2011-05-28 22:07:02Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:07:02Z] NSMessageHandler: Incoming NS command: QNG 40
+
+[2011-05-28 22:07:02Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:07:02Z] NSMessageHandler: Incoming NS command: NFY PUT 1591
+Routing: 1.0\r\n
+To: 1:forward_day@hotmail.com\r\n
+From: 1:forward_day@hotmail.com\r\n
+\r\n
+Reliability: 1.0\r\n
+\r\n
+Notification: 1.0\r\n
+NotifNum: 0\r\n
+Uri: /user\r\n
+NotifType: Partial\r\n
+By: 1:forward_day@hotmail.com;epid={1b355d68-d01c-4ac7-905c-523744db247e}\r\n
+Content-Type: application/user+xml\r\n
+Content-Length: 1292\r\n
+\r\n
+<user><s n="IM"><Status>NLN</Status><CurrentMedia></CurrentMedia></s><s n="PE"><UserTileLocation>&lt;msnobj Creator="forward_day@hotmail.com" Size="11425" Type="3" Location="MSNPSharpDefault" Friendly="AAA=" SHA1D="kO4Y89xI+uMaEi4jwGTAA8sDD0o=" SHA1C="8Nw4EDq7FAY+h9iWleW8pwkg848="/&gt;</UserTileLocation><FriendlyName>sss</FriendlyName><RUM></RUM><PSM></PSM><MachineGuid>1B401CA4-6915-4932-64E2-535D2B0F8537</MachineGuid><DDP></DDP><ColorScheme>-16777216</ColorScheme></s><s n="PD"></s><sep n="IM" epid="{1b355d68-d01c-4ac7-905c-523744db247e}"><Capabilities>2952823072:2558662528</Capabilities></sep><sep n="PE" epid="{1b355d68-d01c-4ac7-905c-523744db247e}"><VER>MSNMSGR:15.4.3508.1109</VER><TYP>1</TYP><Capabilities>100663296:1142538240</Capabilities></sep><sep n="PD" epid="{1b355d68-d01c-4ac7-905c-523744db247e}"><ClientType>1</ClientType><EpName>LENOVO-AB6FB4C2</EpName><Idle>false</Idle><State>NLN</State></sep><sep n="IM" epid="{1b401ca4-6915-4932-64e2-535d2b0f8537}"><Capabilities>2416181284:2147619840</Capabilities></sep><sep n="PE" epid="{1b401ca4-6915-4932-64e2-535d2b0f8537}"><Capabilities>0:1073774592</Capabilities></sep><sep n="PD" epid="{1b401ca4-6915-4932-64e2-535d2b0f8537}"><EpName>Pidgin</EpName><Idle>false</Idle><ClientType>1</ClientType><State>NLN</State></sep></user>
+
+[2011-05-28 22:07:02Z] NSMessageHandler: WindowsLive:forward_day@hotmail.com goes to Online from Offline
+
+[2011-05-28 22:07:02Z] Owner: The account forward_day@hotmail.com was SignedIn at another place: LENOVO-AB6FB4C2 1b355d68-d01c-4ac7-905c-523744db247e
+[2011-05-28 22:07:02Z] Owner: The account forward_day@hotmail.com was SignedIn at another place: LENOVO-AB6FB4C2 1b355d68-d01c-4ac7-905c-523744db247e
+[2011-05-28 22:07:02Z] Owner: The account forward_day@hotmail.com was SignedIn at another place:  1b401ca4-6915-4932-64e2-535d2b0f8537
+[2011-05-28 22:07:02Z] Owner: The account forward_day@hotmail.com was SignedIn at another place: Pidgin 1b401ca4-6915-4932-64e2-535d2b0f8537
+[2011-05-28 22:07:02Z] NSMessageProcessor: Parsing incoming NS command...
+[2011-05-28 22:07:02Z] NSMessageHandler: Incoming NS command: PUT 10 OK 0
+

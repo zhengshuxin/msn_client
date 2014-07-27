@@ -1,0 +1,56 @@
+
+<Member xsi:type="PassportMember">
+  <MembershipId>5</MembershipId>
+  <Type>Passport</Type>
+  <DisplayName>ºÎ¿¡ËÉ</DisplayName>
+  <State>Accepted</State>
+  <Deleted>false</Deleted>
+  <LastChanged>2005-04-13T02:03:33.097-07:00</LastChanged>
+  <JoinedDate>0001-01-01T00:00:00-08:00</JoinedDate>
+  <ExpirationDate>0001-01-01T00:00:00</ExpirationDate>
+  <Changes />
+  <PassportName>kirk1368@hotmail.com</PassportName>
+  <IsPassportNameHidden>false</IsPassportNameHidden>
+  <PassportId>0</PassportId><CID>1835074188636858766</CID>
+  <PassportChanges />
+  <LookedupByCID>false</LookedupByCID>
+</Member>
+
+<Contact>
+  <contactId>c9f187d3-8509-4693-951c-5cc593185dd2</contactId>
+  <contactInfo>
+    <groupIds><guid>bc0f3114-b84f-4949-9131-d2a26778a31</guid></groupIds>
+    <contactType>Regular</contactType>
+    <quickName>kirk1368</quickName>
+    <passportName>kirk1368@hotmail.com</passportName>
+    <IsPassportNameHidden>false</IsPassportNameHidden>
+    <displayName>ºÎ¿¡ËÉ</displayName>
+    <puid>0</puid>
+    <CID>1835074188636858766</CID>
+    <IsNotMobileVisible>false</IsNotMobileVisible>
+    <isMobileIMEnabled>false</isMobileIMEnabled>
+    <isMessengerUser>true</isMessengerUser>
+    <isFavorite>false</isFavorite>
+    <isSmtp>false</isSmtp>
+    <hasSpace>false</hasSpace>
+    <spotWatchState>NoDevice</spotWatchState>
+    <birthdate>0001-01-01T00:00:00</birthdate>
+    <primaryEmailType>ContactEmailPersonal</primaryEmailType>
+    <PrimaryLocation>ContactLocationPersonal</PrimaryLocation>
+    <PrimaryPhone>ContactPhonePersonal</PrimaryPhone>
+    <IsPrivate>false</IsPrivate>
+    <IsHidden>false</IsHidden>
+    <Gender>Unspecified</Gender>
+    <TimeZone>None</TimeZone>
+    <IsAutoUpdateDisabled>false</IsAutoUpdateDisabled>
+    <IsShellContact>false</IsShellContact>
+    <TrustLevel>2</TrustLevel>
+    <PropertiesChanged />
+    <NotRelevant>false</NotRelevant>
+  </contactInfo>
+  <propertiesChanged />
+  <fDeleted>false</fDeleted>
+  <CreateDate>0001-01-01T00:00:00-08:00</CreateDate>
+  <lastChange>2011-08-15T18:37:17.897-07:00</lastChange>
+  <LastModifiedBy>8</LastModifiedBy>
+</Contact>
